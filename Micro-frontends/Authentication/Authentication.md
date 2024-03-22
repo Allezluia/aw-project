@@ -6,7 +6,7 @@
 
 **Abordagem monolítica:** Implica que todas as funcionalidades da aplicação estariam integradas e implementadas como uma única unidade de *software,* o que resultaria na falta de modularidade e escalabilidade.
 
-**Third-party:*** Poderiam limitar a personalização e o controlo do *login/registo*.
+**Third-party:** Poderiam limitar a personalização e o controlo do *login/registo*.
 
 ## Decisão
 Decidiu-se implementar o sistema de *login/registo* como um *micro-frontend* independente dentro da arquitetura da aplicação.
