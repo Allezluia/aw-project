@@ -1,9 +1,8 @@
-# Contexto
+## Contexto
 
 É necessário um mecanismo de autenticação para a aplicação. Sem este, a gestão das credenciais do utilizador apresenta potenciais riscos de segurança, incluindo o acesso não autorizado e/ou violação de dados.
 
-
-# Alternativas consideradas
+## Alternativas consideradas
 
 **Abordagem monolítica:** Implica que todas as funcionalidades da aplicação estariam integradas e implementadas como uma única unidade de *software,* o que resultaria na falta de modularidade e escalabilidade.
 ***Third-party:*** Poderiam limitar a personalização e o controlo do *login/registo*.
@@ -22,5 +21,6 @@ Uma vez que, a autenticação é uma funcionalidade crítica, ter um *micro-fron
 Uma **equipa dedicada** pode concentrar-se em melhorar e manter a funcionalidade do *login/registo*, tomando **decisões autónoma**s, garantindo a sua eficácia e segurança.
 
 **Serviços verticais:** Alinha-se com a arquitetura vertical de serviços do projeto, permitindo um controlo detalhado e escalabilidade.
+
 
 **Flexibilidade:** Permite ajustar e melhorar estas funcionalidades de forma independente, respondendo rapidamente a mudanças nos requisitos ou no ambiente.
