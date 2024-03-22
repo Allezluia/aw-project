@@ -2,8 +2,7 @@
 
 É necessário um mecanismo de autenticação para a aplicação. Sem este, a gestão das credenciais do utilizador apresenta potenciais riscos de segurança, incluindo o acesso não autorizado e/ou violação de dados.
 
-## Alternativas consideradas 
-###(e motivo de não serem escolhidas)
+## Alternativas consideradas (e motivo de não serem escolhidas)
 
 **Abordagem monolítica:** Implica que todas as funcionalidades da aplicação estariam integradas e implementadas como uma única unidade de *software,* o que resultaria na falta de modularidade e escalabilidade.
 
