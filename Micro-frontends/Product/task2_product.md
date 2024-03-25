@@ -20,7 +20,7 @@
     <td>Navegar para a página anterior</td>
   </tr>
    </tr>
-    <td rowspan="4"><img src="../image/Product_3.png" alt="product_3" width="100" height="200"></td>
+    <td rowspan="5"><img src="../image/Product_3.png" alt="product_3" width="100" height="200"></td>
     <td>Mostra informação</td>
   </tr>
   <tr>
