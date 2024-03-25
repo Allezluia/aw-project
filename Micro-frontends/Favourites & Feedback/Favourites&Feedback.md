@@ -2,6 +2,7 @@
 
 Foi considerado um mecanismo que permite aos utilizadores gerir e "salvar" os produtos que desejam manter como favoritos, para posterior visualização ou compra. Com efeito, é guardada uma lista dos produtos guardados (marcados como favoritos), sendo apresentadas as informações relevantes acerca dos mesmos.
 Para além disso, temos também um mecanismo que permite ao utilizador dar *feedback*, de 1 a 5 estrelas, relativamente a um produto.
+
 Estes mecanismos visam solucionar o facto dos utilizadores não possuírem uma forma prática de salvar os produtos para posterior revisão/compra e ajuda a empresa a perceber as preferências dos clientes. Também fornece aos utilizadores uma maneira de tomar decisões conscientes nas suas compras com base nas avaliações de outros utilizadores (neste caso, no rating do produto).
 
 ## Alternativas consideradas (e motivo de não serem escolhidas)
