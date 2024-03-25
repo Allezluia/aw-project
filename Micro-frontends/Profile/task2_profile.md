@@ -10,18 +10,18 @@
     <td>Mostra informação sobre a conta do utilizador</td>
   </tr>
   <tr>
-    <td>Fornece a opção para gerir a aplicação"</td>
+    <td>Fornece a opção para gerir a aplicação</td>
   </tr> 
    <tr>
-    <td>Fornece a opção para contactar "</td>
+    <td>Fornece a opção para contactar</td>
   </tr> 
   <tr>
-    <td>Navegar para a página do QR Code"</td>
+    <td>Navegar para a página do QR Code</td>
   </tr> 
    <tr>
-    <td>Opcão para fazer logout da conta"</td>
+    <td>Opcão para fazer logout da conta</td>
   </tr> 
    <tr>
-    <td>Opcão de mudar ou colocar"</td>
+    <td>Opcão de mudar ou colocar</td>
   </tr> 
 </table>
