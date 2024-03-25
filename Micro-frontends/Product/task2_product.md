@@ -20,11 +20,14 @@
     <td>Navegar para a página anterior</td>
   </tr>
    </tr>
-    <td rowspan="4"><img src="../image/News&Statistics_3.png" alt="news_statistics_3" width="100" height="200"></td>
-    <td>Mostra dados estatísticos negativos</td>
+    <td rowspan="4"><img src="../image/Product_3.png" alt="product_3" width="100" height="200"></td>
+    <td>Mostra informação</td>
   </tr>
   <tr>
-    <td>Navegar para a página das estatística com dados positivos</td>
+    <td>Opção de ver mais detalhes no "Expandir"</td>
+  </tr>
+   <tr>
+    <td>Ir para a página do Feedback</td>
   </tr>
   <tr>
     <td>Navegar para a página anterior</td>
