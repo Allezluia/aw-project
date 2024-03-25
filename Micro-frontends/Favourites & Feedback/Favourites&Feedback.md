@@ -14,7 +14,7 @@ Decidimos considerar o mecanismo de favoritos e *feedback* como um único *micro
 
 ## Justificações
 
-Ter um *micro-frontend* para gerir e “**salvar**” **favoritos** produtos  e que permite dar *feedback* dos mesmos, proporciona uma abordagem mais simples e direta de gerir estas funcionalidades, promovendo também a sua fácil **reutilização** em diferentes partes do sistema.
+Ter um *micro-frontend* para gerir e “**salvar**” **favoritos** produtos  e que permite dar **feedback** dos mesmos, proporciona uma abordagem mais simples e direta de gerir estas funcionalidades, promovendo também a sua fácil **reutilização** em diferentes partes do sistema.
 
 Ao ter um *micro-frontend*  dedicado aos favoritos e *feedback*, garantimos uma **responsabilidade única**, facilitando a compreensão e manutenção destas funcionalidades.
 
