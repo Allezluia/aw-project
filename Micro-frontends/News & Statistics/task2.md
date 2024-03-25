@@ -6,7 +6,7 @@
     <th>FE services</th>
   </tr>
   <tr>
-    <td rowspan="18">News&Statistics</td>
+    <td rowspan="16">News&Statistics</td>
     <td rowspan="5"><img src="../image/News&Statistics_1.png" alt="news_statistics_1" width="100" height="200"></td>
     <td>Apresenta as notícias</td>
   </tr>
@@ -33,9 +33,6 @@
   </tr>
    </tr>
     <td rowspan="5"><img src="../image/News&Statistics_3.png" alt="news_statistics_3" width="100" height="200"></td>
-    <td>Presentation of News Details</td>
-  </tr>
-  <tr>
     <td>Mostra dados estatísticos negativos</td>
   </tr>
   <tr>
@@ -48,10 +45,7 @@
     <td>Navegar para a página do QR Code</td>
   </tr> </tr>
     <td rowspan="5"><img src="../image/News&Statistics_4.png" alt="news_statistics_4" width="100" height="200"></td>
-    <td>Presentation of News Details</td>
-  </tr>
-  <tr>
-    <td>Mostra dados estatísticos negativos</td>
+    <td>Mostra dados estatísticos positivos</td>
   </tr>
   <tr>
     <td>Navegar para a página das estatística com dados negativos</td>
