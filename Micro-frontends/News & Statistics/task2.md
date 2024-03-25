@@ -29,7 +29,23 @@
     <td>Navegar para a página anterior</td>
   </tr>
   <tr>
-    <td>Navegar para a página do QR Codea</td>
+    <td>Navegar para a página do QR Code</td>
+  </tr>
+   </tr>
+    <td rowspan="4"><img src="../image/News&Statistics_3.png" alt="news_statistics_3" width="100" height="200"></td>
+    <td>Presentation of News Details</td>
+  </tr>
+  <tr>
+    <td>Mostra dados estatísticos negativos</td>
+  </tr>
+  <tr>
+    <td>Navegar para a página das estatística com dados positivos</td>
+  </tr>
+  <tr>
+    <td>Navegar para a página anterior</td>
+  </tr>
+  <tr>
+    <td>Navegar para a página do QR Code</td>
   </tr>
   
 </table>
