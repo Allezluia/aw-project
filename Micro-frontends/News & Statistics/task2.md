@@ -6,7 +6,7 @@
     <th>FE services</th>
   </tr>
   <tr>
-    <td rowspan="9">News&Statistics</td>
+    <td rowspan="13">News&Statistics</td>
     <td rowspan="5"><img src="../image/News&Statistics_1.png" alt="news_statistics_1" width="100" height="200"></td>
     <td>Apresenta as notícias</td>
   </tr>
