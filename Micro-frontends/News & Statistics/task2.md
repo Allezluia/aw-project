@@ -22,7 +22,7 @@
   <tr>
     <td>Navegar para a página do QR Code</td>
   </tr>
-    <td rowspan="4"><img src="../image/News&Statistics_2.png" alt="news_statistics_2" width="100" height="200"></td>
+    <td rowspan="3"><img src="../image/News&Statistics_2.png" alt="news_statistics_2" width="100" height="200"></td>
     <td>Presentation of News Details</td>
   </tr>
   <tr>
@@ -32,7 +32,7 @@
     <td>Navegar para a página do QR Code</td>
   </tr>
    </tr>
-    <td rowspan="4"><img src="../image/News&Statistics_3.png" alt="news_statistics_3" width="100" height="200"></td>
+    <td rowspan="5"><img src="../image/News&Statistics_3.png" alt="news_statistics_3" width="100" height="200"></td>
     <td>Presentation of News Details</td>
   </tr>
   <tr>
