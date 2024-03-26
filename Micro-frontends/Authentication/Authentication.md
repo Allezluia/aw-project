@@ -25,3 +25,59 @@ Uma **equipa dedicada** pode concentrar-se em melhorar e manter a funcionalidade
 
 
 **Flexibilidade:** Permite ajustar e melhorar estas funcionalidades de forma independente, respondendo rapidamente a mudanças nos requisitos ou no ambiente.
+
+## Task 2
+
+<table>
+    <tr>
+        <td>Micro-Frontend</td>
+        <td>View</td>
+        <td>FE Service</td>
+    </tr>
+    <tr>
+        <td rowspan="9">Authentication</td>
+        <td rowspan="9">&lt;image&gt;</td>
+        <td>LoginUser</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>RegisterUser</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>AuthenticateUser</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>VerifyUser</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>ResetPassword</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>GenerateAuthToken</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>InvalidateAuthToken</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>SendVerificationEmail</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>SendPasswordResetEmail</td>
+    </tr>
+</table>
+
