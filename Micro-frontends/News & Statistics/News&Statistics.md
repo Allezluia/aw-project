@@ -1,4 +1,4 @@
-## Contexto
+## Contexto e Problema
 
 Foi considerado uma funcionalidade que fornece aos utilizadores notícias relativamente à carne, como artigos em destaque, artigos na íntegra e outras notícias relacionadas com os mesmos.
 
