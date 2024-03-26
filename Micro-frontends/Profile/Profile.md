@@ -1,4 +1,4 @@
-## Contexto
+## Contexto e Problema
 
 A aplicação deve incluir um Perfil, associado ao utilizador que está autenticado, que lhe permite aceder e gerir as suas informações pessoais, tais como foto de perfil, *email*, nome de utilizador, entre outros. Além disso, fornece acesso às definições da app para configuração e personalização, bem como o contacto da empresa.
 
