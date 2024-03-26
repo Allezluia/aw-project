@@ -36,7 +36,7 @@ Uma **equipa dedicada** pode concentrar-se em melhorar e manter a funcionalidade
     </tr>
     <tr>
         <td rowspan="9">Authentication</td>
-        <td rowspan="9"><img src="./image/Authentication.png" alt="Authentication" width="100" height="200"></td>
+        <td rowspan="9"><img src="./Authentication.png" alt="Authentication" width="100" height="200"></td>
     <td>LoginUser</td></tr>
     <tr><td>RegisterUser</td></tr>
     <tr><td>AuthenticateUser</td></tr>
