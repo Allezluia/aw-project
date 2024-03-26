@@ -10,7 +10,7 @@
     <td>Show News</td>
   </tr>
   <tr>
-    <td>Get News Details</td>
+    <td>Display News Details</td>
   </tr>
   <tr>
     <td>Navigation between News</td>
