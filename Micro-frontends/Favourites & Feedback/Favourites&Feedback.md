@@ -51,3 +51,31 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
     <tr><td>SendFeedbackAcknowledgementNotification</td></tr>
     <tr><td>SendFeedbackResolvedNotification</td></tr>
 </table>
+
+
+## Task 3
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
+        <td rowspan="4"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
+        <td rowspan="2">mainView</td>
+        <td>props.titleName</td>
+    </tr>
+        <td>props.textBox</td>
+        </tr>
+        <tr><td>Single Card</td>
+        <tr><td>Card List</td></tr>
+        <tr><td rowspan="7"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+        <td>feedbackText</td></tr> 
+        <tr><td>selectedCategory</td></tr>
+        <tr><td>isSubmitting</td></tr>
+        <tr><td>submitFeedback</td></tr>
+        <tr><td>validateFeedback</td></tr>
+        <tr><td>resetFeedbackForm</td></tr>
+        <tr><td>addToFavourites</td>
+</table>
