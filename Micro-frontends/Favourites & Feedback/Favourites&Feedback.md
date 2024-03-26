@@ -25,3 +25,32 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
 **Serviços verticais:** Alinha-se com a arquitetura vertical de serviços do projeto, permitindo um controlo detalhado e escalabilidade.
 
 **Flexibilidade:** Permite modificar e melhorar estas funcionalidades de forma independente, conforme necessário, sem afetar outras partes do sistema.
+
+## Task 2
+
+<table>
+    <tr>
+        <td>Micro-Frontend</td>
+        <td>View</td>
+        <td>FE Service</td>
+    </tr>
+    <tr>
+        <td rowspan="14">Favourites & Feedback </td>
+        <td rowspan="7"><img src="../image/Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
+    <td>AddToFavourites</td>
+    </tr>
+    <tr><td>RemoveFromFavourites</td></tr>
+    <tr><td>GetFavouritesForUser</td></tr>
+    <tr><td>GetUserPreferences</td></tr>
+    <tr><td>UpdateUserPreferences</td></tr>
+    <tr><td>SendFavouriteAddedNotification</td></tr>
+    <tr><td>SendFavouriteRemovedNotification</td></tr>
+    <tr><td rowspan="7"><img src="../image/Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+    <td>SubmitFeedback</td></tr> 
+    <tr><td>GetFeedbackDetails</td></tr>
+    <tr><td>UpdateFeedbackStatus</td></tr>
+    <tr><td>RecordFeedbackSubmission</td></tr>
+    <tr><td>GenerateFeedbackReports</td></tr>
+    <tr><td>SendFeedbackAcknowledgementNotification</td></tr>
+    <tr><td>SendFeedbackResolvedNotification</td></tr>
+</table>
