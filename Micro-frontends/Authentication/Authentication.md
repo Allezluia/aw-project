@@ -1,4 +1,4 @@
-## Contexto
+## Contexto e Problema
 
 É necessário um mecanismo de autenticação para a aplicação. Sem este, a gestão das credenciais do utilizador apresenta potenciais riscos de segurança, incluindo o acesso não autorizado e/ou violação de dados.
 
