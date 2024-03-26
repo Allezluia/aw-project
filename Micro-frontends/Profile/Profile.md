@@ -22,6 +22,4 @@ Este *micro-frontend* tem a **responsabilidade única** de gerir e exibir as inf
 
 Uma **equipa dedicada** pode focar-se em projetar, melhorar e manter esta funcionalidade, tomando decisões autónomas e assim, garantindo a sua eficácia e coesão dentro da arquitetura da aplicação.
 
-**Serviços verticais:** ??
-
 Este *micro-frontend* integrado permite maior **flexibilidade** e escalabilidade, facilitando a adição de novas funcionalidades.
