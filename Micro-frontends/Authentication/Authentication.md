@@ -15,7 +15,7 @@ Decidiu-se implementar o sistema de *login/registo* como um *micro-frontend* ind
 
 Ter um *micro-frontend* dedicado ao *login* e *registo* **simplifica** o código, uma vez que separa as funcionalidades de autenticação do restante da aplicação, promovendo a sua **reutilização** facilmente em diferentes partes do sistema, ao encapsulá-las num *micro-frontend.*
 
-Este *micro-frontend* tem a **responsabilidade única** de lidar com a autenticação de usuários, mantendo-o focado e coeso.
+Este *micro-frontend* tem a **responsabilidade única** de lidar com a autenticação de utilizadores, mantendo-o focado e coeso.
 
 Uma vez que, a autenticação é uma funcionalidade crítica, ter um *micro-frontend* separado, permite-nos atualizá-lo **independentemente** de outros serviços, garantindo **implementações** rápidas e seguras.
 
