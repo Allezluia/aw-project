@@ -16,13 +16,13 @@
     <td>Navigation between News</td>
   </tr>
   <tr>
-    <td>Scroll Up/Down</td>
+    <td>Scroll up And Down To See More Information</td>
   </tr>
     <td rowspan="2"><img src="./News_&_Statistics_2.png" alt="News_Statistics_2" width="100" height="200"></td>
     <td>Shows News Details</td>
   </tr>
   <tr>
-    <td>Scroll Up/Down</td>
+    <td>Scroll up And Down To See More Information</td>
   </tr>
    </tr>
     <td rowspan="2"><img src="./News_&_Statistics_3.png" alt="News_Statistics_3" width="100" height="200"></td>
