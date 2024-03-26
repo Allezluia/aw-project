@@ -29,12 +29,12 @@
     <td>Present Negative Statistics On Meat Consumption</td>
   </tr>
   <tr>
-    <td>Explore Positive Statistics Via Side Navigation</td>
+    <td>Display Positive Statistics Via Side Navigation</td>
   </tr>
     <td rowspan="2"><img src="./News_&_Statistics_4.png" alt="News_Statistics_4" width="100" height="200"></td>
     <td>Present Positive Statistics On Meat Consumption</td>
   </tr>
   <tr>
-    <td>Explore Negative Statistics Via Side Navigation</td>
+    <td>Display Negative Statistics Via Side Navigation</td>
   </tr>
 </table>
