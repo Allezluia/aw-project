@@ -1,4 +1,3 @@
-
 <table>
   <tr>
     <th>Micro-frontends</th>
@@ -19,14 +18,11 @@
   <tr>
     <td>Scroll Up/Down</td>
   </tr>
-    <td rowspan="3"><img src="./News_&_Statistics_2.png" alt="News_Statistics_2" width="100" height="200"></td>
+    <td rowspan="2"><img src="./News_&_Statistics_2.png" alt="News_Statistics_2" width="100" height="200"></td>
     <td>Shows News Details</td>
   </tr>
   <tr>
-    <td>Navegar para a página anterior</td>
-  </tr>
-  <tr>
-    <td>Navegar para a página do QR Code</td>
+    <td>Scroll Up/Down</td>
   </tr>
    </tr>
     <td rowspan="4"><img src="./News_&_Statistics_3.png" alt="News_Statistics_3" width="100" height="200"></td>
