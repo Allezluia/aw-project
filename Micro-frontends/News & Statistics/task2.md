@@ -8,8 +8,6 @@
   <tr>
     <td rowspan="16">News&Statistics</td>
     <td rowspan="4"><img src="./News_&_Statistics_1.png" alt="News_Statistics_1" width="100" height="200"></td>
-  </tr>
-  <tr>
     <td>Show News</td>
   </tr>
   <tr>
