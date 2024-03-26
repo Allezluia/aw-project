@@ -6,19 +6,16 @@
   </tr>
   <tr>
     <td rowspan="6">Profile</td>
-    <td rowspan="6"><img src="../image/profile.png" alt="profile" width="100" height="200"></td>
+    <td rowspan="6"><img src="./profile.png" alt="Profile" width="100" height="200"></td>
     <td>Display user account information</td>
   </tr>
   <tr>
     <td>Supply Option For Users To Manage Their Accounts</td>
   </tr> 
    <tr>
-    <td>Fornece a opção para contactar</td>
+    <td>Supply Option For Users To Contact Support</td>
   </tr> 
    <tr>
-    <td>Opcão para fazer logout da conta</td>
-  </tr> 
-   <tr>
-    <td>Opcão de mudar ou colocar</td>
-  </tr> 
+    <td>Supply Option For Users To Log Out</td>
+  </tr>  
 </table>
