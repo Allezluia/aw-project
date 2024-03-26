@@ -6,8 +6,14 @@
   </tr>
   <tr>
     <td rowspan="16">Product</td>
-    <td rowspan="1"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
-    <td>Apresentação dos produtos em destaque</td>
+    <td rowspan="3"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
+    <td>Display Featured Products</td>
+  </tr>
+   <tr>
+    <td>Scroll Right And Left To See More Products </td>
+  </tr>
+   <tr>
+    <td>Details Of A Specific Product </td>
   </tr>
     <td rowspan="3"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
     <td>leitura de Qr Code</td>
