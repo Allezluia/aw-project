@@ -32,20 +32,16 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         <td>FE Service</td>
     </tr>
     <tr>
-        <td rowspan="14">Favourites & Feedback </td>
-        <td rowspan="7"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
-    <td>AddToFavourites</td>
-    </tr>
+        <td rowspan="12">Favourites & Feedback </td>
+        <td rowspan="4"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
     <tr><td>RemoveFromFavourites</td></tr>
     <tr><td>GetFavouritesForUser</td></tr>
-    <tr><td>GetUserPreferences</td></tr>
-    <tr><td>UpdateUserPreferences</td></tr>
-    <tr><td>SendFavouriteAddedNotification</td></tr>
     <tr><td>SendFavouriteRemovedNotification</td></tr>
-    <tr><td rowspan="7"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+    <tr><td rowspan="8"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
     <td>SubmitFeedback</td></tr> 
     <tr><td>GetFeedbackDetails</td></tr>
-    <tr><td>UpdateFeedbackStatus</td></tr>
+    <tr><td>AddToFavourites</td></tr>
+    <tr><td>SendfavouriteAddedNotification</td></tr>
     <tr><td>RecordFeedbackSubmission</td></tr>
     <tr><td>GenerateFeedbackReports</td></tr>
     <tr><td>SendFeedbackAcknowledgementNotification</td></tr>
@@ -62,20 +58,40 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         <td>View models</td>
     </tr>
     <tr>
-        <td rowspan="4"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
+        <td rowspan="7"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
         <td rowspan="2">mainView</td>
         <td>props.titleName</td>
-    </tr>
+        </tr>
         <td>props.textBox</td>
         </tr>
-        <tr><td>Single Card</td>
-        <tr><td>Card List</td></tr>
-        <tr><td rowspan="7"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
-        <td>feedbackText</td></tr> 
-        <tr><td>selectedCategory</td></tr>
-        <tr><td>isSubmitting</td></tr>
-        <tr><td>submitFeedback</td></tr>
-        <tr><td>validateFeedback</td></tr>
-        <tr><td>resetFeedbackForm</td></tr>
-        <tr><td>addToFavourites</td>
+        <tr><td rowspan="3">Single Card</td>
+        <td>props.superMarketLocation</td></tr>
+        </tr>
+        <td>props.meatImage</td>
+        </tr>
+        </tr>
+        <td>props.price</td>
+        </tr>
+        <tr><td rowspan="2">Card List</td>
+        <td>props.cards</td></tr>
+        </tr>
+        <td>props.favouriteList</td>
+        </tr>
+        <tr><td rowspan="8"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+        <td rowspan="3">Top View</td>
+        <td>props.meatLogo</td>
+        </tr>
+        <td>props.tittle</td>
+        </tr>
+        </tr>
+        <td>props.price</td>
+        </tr>
+        <tr><td rowspan="2">Feedback Box</td>
+        <td>props.feedbackTitle</td></tr>
+        </tr>
+        <td>props.feedbackList</td>
+        </tr>
+        <tr><td rowspan="1"> Bottom view</td>
+        <td>props.informations</td></tr>
+    
 </table>
