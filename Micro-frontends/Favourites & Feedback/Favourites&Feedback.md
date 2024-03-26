@@ -36,7 +36,7 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
     </tr>
     <tr>
         <td rowspan="14">Favourites & Feedback </td>
-        <td rowspan="7"><img src="../image/Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
+        <td rowspan="7"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
     <td>AddToFavourites</td>
     </tr>
     <tr><td>RemoveFromFavourites</td></tr>
@@ -45,7 +45,7 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
     <tr><td>UpdateUserPreferences</td></tr>
     <tr><td>SendFavouriteAddedNotification</td></tr>
     <tr><td>SendFavouriteRemovedNotification</td></tr>
-    <tr><td rowspan="7"><img src="../image/Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+    <tr><td rowspan="7"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
     <td>SubmitFeedback</td></tr> 
     <tr><td>GetFeedbackDetails</td></tr>
     <tr><td>UpdateFeedbackStatus</td></tr>
