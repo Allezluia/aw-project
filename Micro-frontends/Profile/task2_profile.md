@@ -7,16 +7,13 @@
   <tr>
     <td rowspan="6">Profile</td>
     <td rowspan="6"><img src="../image/profile.png" alt="profile" width="100" height="200"></td>
-    <td>Mostra informação sobre a conta do utilizador</td>
+    <td>Display user account information</td>
   </tr>
   <tr>
-    <td>Fornece a opção para gerir a aplicação</td>
+    <td>Supply Option For Users To Manage Their Accounts</td>
   </tr> 
    <tr>
     <td>Fornece a opção para contactar</td>
-  </tr> 
-  <tr>
-    <td>Navegar para a página do QR Code</td>
   </tr> 
    <tr>
     <td>Opcão para fazer logout da conta</td>
