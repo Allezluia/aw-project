@@ -15,14 +15,11 @@
    <tr>
     <td>Details Of A Specific Product </td>
   </tr>
-    <td rowspan="3"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
-    <td>leitura de Qr Code</td>
+    <td rowspan="2"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
+    <td>QR Code Scanning</td>
   </tr>
   <tr>
-    <td>Opção de ver os detalhes da carne que foi lida pelo QR Code </td>
-  </tr>
-  <tr>
-    <td>Navegar para a página anterior</td>
+    <td>Product Details </td>
   </tr>
     <td rowspan="5"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
     <td>Mostra informação</td>
