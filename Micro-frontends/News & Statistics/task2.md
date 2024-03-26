@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td rowspan="16">News&Statistics</td>
-    <td rowspan="5"><img src="./News&Statistics_1.png" alt="news_statistics_1" width="100" height="200"></td>
+    <td rowspan="5"><img src="./News_&_Statistics_1.png" alt="News_Statistics_1" width="100" height="200"></td>
     <td>Show News</td>
   </tr>
   <tr>
