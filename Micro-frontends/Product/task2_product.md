@@ -39,4 +39,9 @@
   <tr>
     <td>Scroll Up And Down To See More Information</td>
   </tr>
+   </tr>
+    <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
+    <td>Display Product Details Information</td>
+  </tr>
+
 </table>
