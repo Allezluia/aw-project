@@ -7,8 +7,8 @@
   </tr>
   <tr>
     <td rowspan="16">News&Statistics</td>
-    <td rowspan="5"><img src="../image/News&Statistics_1.png" alt="news_statistics_1" width="100" height="200"></td>
-    <td>Apresenta as notícias</td>
+    <td rowspan="5"><img src="./News&Statistics_1.png" alt="news_statistics_1" width="100" height="200"></td>
+    <td>Show News</td>
   </tr>
   <tr>
     <td>Ver mais detalhes sobre a notícia no "Read More"</td>
