@@ -25,6 +25,4 @@ Correções ou atualizações podem ser **implementadas independentemente** de o
 
 Uma **equipa dedicada** pode concentrar-se exclusivamente em manter e melhorar estas funcionalidades, garantindo a sua eficácia.
 
-**Serviços verticais:** ??
-
 Este *micro-frontend* integrado permite maior **flexibilidade**, escalabilidade e personalização facilitando a adição de novas funcionalidades.
