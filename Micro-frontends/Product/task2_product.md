@@ -21,21 +21,15 @@
   <tr>
     <td>Product Details </td>
   </tr>
-    <td rowspan="5"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
-    <td>Mostra informação</td>
+    <td rowspan="3"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
+    <td>Display Product Information </td>
   </tr>
   <tr>
-    <td>Opção de ver mais detalhes no "Expandir"</td>
+    <td>Display Product Details</td>
   </tr>
    <tr>
-    <td>Ir para a página do Feedback</td>
+    <td>Display Product Feedback</td>
   </tr>
-  <tr>
-    <td>Navegar para a página anterior</td>
-  </tr>
-  <tr>
-    <td>Navegar para a página do QR Code</td>
-  </tr> 
     <td rowspan="4"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
     <td>Mostra dados estatísticos positivos</td>
   </tr>
