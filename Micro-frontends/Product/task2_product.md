@@ -1,4 +1,3 @@
-
 <table>
   <tr>
     <th>Micro-frontends</th>
@@ -7,10 +6,10 @@
   </tr>
   <tr>
     <td rowspan="16">Product</td>
-    <td rowspan="1"><img src="../image/Product_1.png" alt="product_1" width="100" height="200"></td>
+    <td rowspan="1"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
     <td>Apresentação dos produtos em destaque</td>
   </tr>
-    <td rowspan="3"><img src="../image/Product_2.png" alt="product_2" width="100" height="200"></td>
+    <td rowspan="3"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
     <td>leitura de Qr Code</td>
   </tr>
   <tr>
@@ -19,7 +18,7 @@
   <tr>
     <td>Navegar para a página anterior</td>
   </tr>
-    <td rowspan="5"><img src="../image/Product_3.png" alt="product_3" width="100" height="200"></td>
+    <td rowspan="5"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
     <td>Mostra informação</td>
   </tr>
   <tr>
@@ -34,7 +33,7 @@
   <tr>
     <td>Navegar para a página do QR Code</td>
   </tr> 
-    <td rowspan="4"><img src="../image/News&Statistics_4.png" alt="news_statistics_4" width="100" height="200"></td>
+    <td rowspan="4"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
     <td>Mostra dados estatísticos positivos</td>
   </tr>
   <tr>
