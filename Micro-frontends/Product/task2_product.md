@@ -30,16 +30,13 @@
    <tr>
     <td>Display Product Feedback</td>
   </tr>
-    <td rowspan="4"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
-    <td>Mostra dados estatísticos positivos</td>
+    <td rowspan="3"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
+    <td>Display Product Details Information</td>
   </tr>
   <tr>
-    <td>Navegar para a página das estatística com dados negativos</td>
+    <td>Display More Product Details</td>
   </tr>
   <tr>
-    <td>Navegar para a página anterior</td>
+    <td>Scroll Up And Down To See More Information</td>
   </tr>
-  <tr>
-    <td>Navegar para a página do QR Code</td>
-  </tr> 
 </table>
