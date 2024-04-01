@@ -17,3 +17,59 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
 **Serviços verticais:** A funcionalidade de localização está inerentemente ligada aos serviços relacionados a compras no supermercado. Ao integrarmos as categorias de carnes disponíveis no supermercado e os seus respectivos destaques, este *micro-frontend* oferece uma solução integrada e coesa, alinhada com a arquitetura vertical de serviços do projeto, permitindo um controlo detalhado e escalabilidade.
 
 **Flexibilidade:** Permite ajustar e melhorar estas funcionalidades de forma independente, de forma a responder às necessidades, em constante mudança, do mercado e dos utilizadores.
+
+## Task 2
+
+<table>
+  <tr>
+    <th>Micro-frontends</th>
+    <th>Views</th>
+    <th>FE services</th>
+  </tr>
+  <tr>
+    <td rowspan="18">Product</td>
+    <td rowspan="3"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
+    <td>Display Featured Products</td>
+  </tr>
+   <tr>
+    <td>Scroll Right And Left To See More Products </td>
+  </tr>
+   <tr>
+    <td>Details Of A Specific Product </td>
+  </tr>
+    <td rowspan="2"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
+    <td>QR Code Scanning</td>
+  </tr>
+  <tr>
+    <td>Product Details </td>
+  </tr>
+    <td rowspan="3"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
+    <td>Display Product Information </td>
+  </tr>
+  <tr>
+    <td>Display Product Details</td>
+  </tr>
+   <tr>
+    <td>Display Product Feedback</td>
+  </tr>
+    <td rowspan="3"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
+    <td>Display Product Details Information</td>
+  </tr>
+  <tr>
+    <td>Display More Product Details</td>
+  </tr>
+  <tr>
+    <td>Scroll Up And Down To See More Information</td>
+  </tr>
+   </tr>
+    <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
+    <td>Display Product Details Information</td>
+  </tr>
+ <td rowspan="2"><img src="./Product_6.jpg" alt="product_6" width="100" height="200"></td>
+    <td>Product categorization</td>
+  </tr>
+  <tr>
+    <td>Filtering Type of Product</td>
+  </tr>
+</table>
+
