@@ -124,7 +124,7 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         <tr><td rowspan="1">Card List</td>
         <td>props.cards</td></tr>
         </tr>
-        <tr><td rowspan="12"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+        <tr><td rowspan="13"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
         <tr><td rowspan="2">mainView</td>
         <td>props.meatImage</td></tr>
         </tr>
