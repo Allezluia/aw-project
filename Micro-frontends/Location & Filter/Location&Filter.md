@@ -2,7 +2,7 @@
 
 Um mecanismo que fornece uma barra de pesquisa ao utilizador, permitindo-lhe selecionar um supermercado específico, associado a uma determinada localização, que pode ser visualizada através da *API* do *Google Maps* e, por sua vez, outros supermercados próximos. Além disso, esta funcionalidade permite ainda selecionar uma dada categoria de carne, permitindo a visualização (e futuras operações) das diversas carnes disponíveis no mesmo.
 
-Este mecanismo ajuda os utilizadores a encontrar produtos desejados com mais facilidade e conveniência, economizando tempo e esforço durante as compras.
+Este mecanismo ajuda os utilizadores a encontrar produtos desejados com maior facilidade e conveniência, economizando tempo e esforço durante as compras.
 
 ## Decisão
 
