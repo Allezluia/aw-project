@@ -151,9 +151,9 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         </tr>
         <td>props.feedbackRating</td>
         </tr>
-        <tr><td rowspan="13"><img src="./Favourites_&_Feedback_3.png" alt="Feedback" width="100" height="200">
+        <tr><td rowspan="6"><img src="./Favourites_&_Feedback_3.png" alt="Feedback" width="100" height="200">
         <tr><td rowspan="1">mainView</td>
-        <td>props.meatPopUp</td></tr>
+        <td>props.PopUp</td></tr>
         </tr>
         <tr><td rowspan="4">PopUp</td>
         <td>props.PopUpTitle</td></tr>
@@ -164,6 +164,18 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         </tr>
         <td>props.PopUpSaveButton</td></tr>
         </tr>
+        <tr><td rowspan="5"><img src="./Favourites_&_Feedback_2.png" alt="Feedback" width="100" height="200">
+        <tr><td rowspan="1">mainView</td>
+        <td>props.PopUp</td></tr>
+        </tr>
+        <tr><td rowspan="3">PopUp</td>
+        <td>props.PopUpIcon</td></tr>
+        </tr>
+        <td>props.PopUptextMenssage</td></tr>
+        </tr>
+        <td>props.PopUpConfirmationButton</td></tr>
+        </tr>
+      
     
 </table>
 
