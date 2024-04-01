@@ -27,8 +27,8 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
     <th>FE services</th>
   </tr>
   <tr>
-    <td rowspan="18">Product</td>
-    <td rowspan="3"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
+    <td rowspan="18">Location & Filter</td>
+    <td rowspan="3"><img src="./Location_1.png" alt="location_1" width="100" height="200"></td>
     <td>Display Featured Products</td>
   </tr>
    <tr>
