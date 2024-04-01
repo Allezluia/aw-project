@@ -38,7 +38,7 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
     <td>Highlights Of A Specific Product </td>
   </tr>
     <td rowspan="3"><img src="./Location_2.png" alt="location_2" width="100" height="200"></td>
-    <td>View Location</td>
+    <td>View Location on the map</td>
   </tr>
   <tr>
     <td>Product categorization</td>
@@ -46,27 +46,23 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
   <tr>
     <td>Filtering Type of Product</td>
   </tr>
-    <td rowspan="3"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
-    <td>Display Product Information </td>
+    <td rowspan="6"><img src="./Location_3.png" alt="product_3" width="100" height="200"></td>
+    <td>View Location and Selected Category</td>
   </tr>
   <tr>
-    <td>Display Product Details</td>
+    <td>Highlights Of A Specific Product </td>
   </tr>
    <tr>
-    <td>Display Product Feedback</td>
-  </tr>
-    <td rowspan="3"><img src="./Product_4.png" alt="product_4" width="100" height="200"></td>
-    <td>Display Product Details Information</td>
+    <td>Display Highlights Product Details</td>
   </tr>
   <tr>
-    <td>Display More Product Details</td>
+    <td>Scroll Right And Left To See More Highlights Product</td>
   </tr>
   <tr>
-    <td>Scroll Up And Down To See More Information</td>
+    <td>Display All Products</td>
   </tr>
-   </tr>
-    <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
-    <td>Display Product Details Information</td>
+  <tr>
+    <td>Scroll Right And Left To See More Products</td>
   </tr>
 </table>
 
