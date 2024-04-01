@@ -35,7 +35,7 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
     <td>Scroll Right And Left To See More Products </td>
   </tr>
    <tr>
-    <td>Details Of A Specific Product </td>
+    <td>Highlights Of A Specific Product </td>
   </tr>
     <td rowspan="2"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
     <td>QR Code Scanning</td>
