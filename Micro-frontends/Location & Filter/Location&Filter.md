@@ -37,7 +37,7 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
    <tr>
     <td>Highlights Of A Specific Product </td>
   </tr>
-    <td rowspan="2"><img src="./Location_2.png" alt="location_2" width="100" height="200"></td>
+    <td rowspan="3"><img src="./Location_2.png" alt="location_2" width="100" height="200"></td>
     <td>View Location</td>
   </tr>
   <tr>
