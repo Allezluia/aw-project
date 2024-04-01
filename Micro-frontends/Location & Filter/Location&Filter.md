@@ -65,7 +65,7 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
     <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
     <td>Display Product Details Information</td>
   </tr>
- <td rowspan="2"><img src="./Product_6.jpg" alt="product_6" width="100" height="200"></td>
+ <td rowspan="2"><img src="./Location_4.jpg" alt="location_4" width="100" height="200"></td>
     <td>Product categorization</td>
   </tr>
   <tr>
