@@ -1,6 +1,8 @@
-## Contexto
+## Contexto e Problema
 
 Um mecanismo que permite o *display* de informações relativamente ao produto, tais a sua foto, nome e preço, a secção de detalhes, bem como o botão para expandir os mesmos, que exibe a informação nutricional do mesmo. Este *display* pode ser obtido também, através de um botão que permite a leitura do *QR-Code* de um produto (se o mesmo for lido com sucesso).
+
+Este mecanismo visa solucionar a necessidade de fornecer aos utilizadores informações detalhadas sobre um produto de forma conveniente e acessível.
 
 ## Decisão
 
