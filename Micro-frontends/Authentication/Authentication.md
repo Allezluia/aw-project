@@ -48,3 +48,38 @@ Uma **equipa dedicada** pode concentrar-se em melhorar e manter a funcionalidade
     <tr><td>SendPasswordResetEmail</td></tr>
 </table>
 
+## Task 3 
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
+        <td rowspan="18"><img src="./Authentication.png" alt="Authenticaton" width="100" height="200"></td>
+        <td rowspan="3">Header</td>
+        <td>props.title</td>
+        </tr>
+        <td>props.text</td>
+        </tr>
+        <td>props.meatImg</td>
+        </tr>
+        <tr><td rowspan="8">TextBox</td>
+        <td>props.textTitle</td></tr>
+        </tr>
+        <td>props.textEmail</td>
+        </tr>
+        <td>props.inputEmail</td>
+        </tr>
+        <td>props.TextPassword</td>
+        </tr>
+        <td>props.inputPassword</td>
+        </tr>
+        <td>props.loginButton</td>
+        </tr>
+        <td>props.textRegister</td>
+        </tr>
+        <td>props.registerButton</td>
+        </tr>
+</table>
