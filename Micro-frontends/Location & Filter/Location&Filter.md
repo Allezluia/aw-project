@@ -28,8 +28,14 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
   </tr>
   <tr>
     <td rowspan="18">Location & Filter</td>
-    <td rowspan="3"><img src="./Location_1.png" alt="location_1" width="100" height="200"></td>
-    <td>Display Featured Products</td>
+    <td rowspan="5"><img src="./Location_1.png" alt="location_1" width="100" height="200"></td>
+    <td>Search for Supermarket</td>
+  </tr>
+  <tr>
+    <td>Display selected supermarket </td>
+  </tr>
+  <tr>
+    <td>Display Featured Products </td>
   </tr>
    <tr>
     <td>Scroll Right And Left To See More Products </td>
