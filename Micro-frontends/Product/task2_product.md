@@ -6,15 +6,6 @@
   </tr>
   <tr>
     <td rowspan="12">Product</td>
-    <td rowspan="3"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
-    <td>Display Featured Products</td>
-  </tr>
-   <tr>
-    <td>Scroll Right And Left To See More Products </td>
-  </tr>
-   <tr>
-    <td>Details Of A Specific Product </td>
-  </tr>
     <td rowspan="2"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
     <td>QR Code Scanning</td>
   </tr>
