@@ -5,7 +5,7 @@
     <th>FE services</th>
   </tr>
   <tr>
-    <td rowspan="18">Product</td>
+    <td rowspan="12">Product</td>
     <td rowspan="3"><img src="./Product_1.png" alt="product_1" width="100" height="200"></td>
     <td>Display Featured Products</td>
   </tr>
@@ -42,11 +42,5 @@
    </tr>
     <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
     <td>Display Product Details Information</td>
-  </tr>
- <td rowspan="2"><img src="./Product_6.jpg" alt="product_6" width="100" height="200"></td>
-    <td>Product categorization</td>
-  </tr>
-  <tr>
-    <td>Filtering Type of Product</td>
   </tr>
 </table>
