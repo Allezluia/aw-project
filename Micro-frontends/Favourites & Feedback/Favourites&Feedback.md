@@ -95,3 +95,58 @@ Uma **equipa dedicada** pode concentrar-se em manter e melhorar estas funcionali
         <td>props.informations</td></tr>
     
 </table>
+
+## Task 3 - versao 2
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
+        <td rowspan="7"><img src="./Favourites_&_Feedback_4.png" alt="Favourite" width="100" height="200"></td>
+        <td rowspan="2">mainView</td>
+        <td>props.titleName</td>
+        </tr>
+        <td>props.textBox</td>
+        </tr>
+        <tr><td rowspan="4">Single Card</td>
+        <td>props.superMarketLocation</td></tr>
+        </tr>
+        <td>props.meatImage</td>
+        </tr>
+        <td>props.meatDescription</td>
+        </tr>
+        </tr>
+        <td>props.price</td>
+        </tr>
+        <tr><td rowspan="1">Card List</td>
+        <td>props.cards</td></tr>
+        </tr>
+        <tr><td rowspan="8"><img src="./Favourites_&_Feedback_1.png" alt="Feedback" width="100" height="200">
+        <tr><td rowspan="2">mainView</td>
+        <td>props.meatImage</td></tr>
+        </tr>
+        <td>props.textBox</td>
+        </tr>
+        <td rowspan="3">TextBox</td>
+        <td>props.tittle</td>
+        </tr>
+        </tr>
+        <td>props.price</td>
+        </tr>
+        <td>props.feedbackList</td>
+        </tr>
+        <tr><td rowspan="2">Feedback Box</td>
+        <td>props.feedbackTitle</td></tr>
+        </tr>
+        <td>props.feedbackList</td>
+        </tr>
+        <tr><td rowspan="1"> Bottom view</td>
+        <td>props.informations</td></tr>
+    
+</table>
+
+
+
