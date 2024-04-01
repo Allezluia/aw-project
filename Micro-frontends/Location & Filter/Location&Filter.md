@@ -37,11 +37,14 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
    <tr>
     <td>Highlights Of A Specific Product </td>
   </tr>
-    <td rowspan="2"><img src="./Product_2.png" alt="product_2" width="100" height="200"></td>
-    <td>QR Code Scanning</td>
+    <td rowspan="2"><img src="./Location_2.png" alt="location_2" width="100" height="200"></td>
+    <td>View Location</td>
   </tr>
   <tr>
-    <td>Product Details </td>
+    <td>Product categorization</td>
+  </tr>
+  <tr>
+    <td>Filtering Type of Product</td>
   </tr>
     <td rowspan="3"><img src="./Product_3.png" alt="product_3" width="100" height="200"></td>
     <td>Display Product Information </td>
@@ -64,12 +67,6 @@ Uma **equipa dedicada** pode concentrar-se na melhoria e manutenção destas fun
    </tr>
     <td rowspan="1"><img src="./Product_5.png" alt="product_5" width="100" height="200"></td>
     <td>Display Product Details Information</td>
-  </tr>
- <td rowspan="2"><img src="./Location_4.jpg" alt="location_4" width="100" height="200"></td>
-    <td>Product categorization</td>
-  </tr>
-  <tr>
-    <td>Filtering Type of Product</td>
   </tr>
 </table>
 
