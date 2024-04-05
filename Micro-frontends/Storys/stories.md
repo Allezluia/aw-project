@@ -8,6 +8,7 @@ Por fim, satisfeita com o estabelecimento e com a transparência e a qualidade d
 
 ![Story 1](Story1.drawio.png)
 
+
 ## Story 2
 
 Após a excelente experiência de Joana com a aplicação QRMeat, decidiu recomendá-la à sua amiga Maria. Curiosa, a Maria decidiu explorar a aplicação e, após registar-se, ao selecionar a secção de notícias, ficou intrigada com uma reportagem que destacava os desafios da indústria da carne na redução do consumo global. De seguida, na tentativa de se informar mais, Maria reparou na existência de uma secção de estatísticas positivas e negativas sobre a indústria da carne desde 2021. 
