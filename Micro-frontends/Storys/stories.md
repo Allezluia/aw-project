@@ -16,3 +16,5 @@ Após a excelente experiência de Joana com a aplicação QRMeat, decidiu recome
 Entre as estatísticas disponíveis estavam dados sobre a área associada ao desmatamento devido à produção de carne, a produção animal global, o consumo médio de carne e as emissões de metano e CO2eq associadas à indústria da carne. Além disso, a Maria teve ainda acesso a várias informações, as quais incluiam a quantidade de excrementos na água provenientes da pecuária, os químicos encontrados na água devido às práticas agrícolas, o uso de rações industriais na alimentação animal e a proporção de gado criado ao ar livre.
 
 Impressionada com a quantidade de dados disponíveis, Maria dedicou algum tempo a explorar estas estatísticas, de forma a ampliar a sua compreensão sobre como a indústria da carne afeta o meio ambiente e a saúde pública. A sua nova perspectiva incentivou-a a fazer escolhas alimentares mais conscientes e a procurar alternativas mais sustentáveis nas suas compras futuras, utilizando o QRMeat, recomendado pela sua amiga Joana.
+
+![Story 2](story2.drawio.png)
