@@ -1,0 +1,6 @@
+## Story 1
+
+Joana sempre teve uma preocupação especial com o bem-estar dos animais e buscava maneiras de consumir carne de forma ética. Quando descobriu o QRMeat, viu nele uma oportunidade de tornar suas escolhas alimentares mais conscientes.
+Ao explorar o aplicativo, Joana encontrou uma seção dedicada a produtos de origem responsável, onde podia encontrar informações sobre supermercados e açougues que vendiam carne certificada. Depois de uma breve pesquisa, optou por um supermercado local bem avaliado pelos usuários.
+Lá, ela encontrou uma variedade de opções de carne certificada, criada de acordo com padrões éticos de criação animal. Sentindo-se confiante em suas escolhas, Joana fez sua compra e deixou o estabelecimento satisfeita com a transparência e a qualidade dos produtos.
+De volta para casa, enquanto preparava uma refeição, Joana decidiu deixar um breve feedback positivo no QRMeat, elogiando o supermercado por oferecer opções que respeitavam seus valores e incentivando outros a fazerem escolhas éticas ao comprar carne. Para Joana, usar o QRMeat não apenas facilitou a compra de carne de origem ética, mas também a fez sentir-se conectada a uma comunidade de consumidores preocupados com questões ambientais e de bem-estar animal.
