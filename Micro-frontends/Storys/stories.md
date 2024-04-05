@@ -4,3 +4,6 @@
 Então a Joana deslocou-se até ao supermercado que o QRmeat indicava e fez as suas compras. Por fim, satisfeita com o estabelecimento e com a transparência e a qualidade dos produtos quando voltou para casa, enquanto preparava uma refeição, Joana decidiu deixar um breve feedback positivo no QRMeat, elogiando o supermercado por oferecer opções que respeitavam seus valores e incentivando outros utilizadores a fazerem escolhas éticas ao comprar carne. Para a Joana, usar o QRMeat não apenas facilitou a compra de carne de origem ética, mas também a fez sentir-se conectada a uma comunidade de consumidores preocupados com questões ambientais e de bem-estar animal.
 
 ![Story 1](Story1.drawio.png)
+
+## Story 2
+
