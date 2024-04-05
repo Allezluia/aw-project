@@ -7,3 +7,9 @@ Então a Joana deslocou-se até ao supermercado que o QRmeat indicava e fez as s
 
 ## Story 2
 
+Após a excelente experiência de Joana com a aplicação QRMeat, decidiu recomendá-la à sua amiga Maria. Curiosa, a Maria decidiu explorar a aplicação e, após registar-se, ao selecionar a secção de notícias, ficou intrigada com uma reportagem que destacava os desafios da indústria da carne na redução do consumo global. 
+De seguida, na tentativa de se informar mais, Maria reparou na existência de uma secção de estatísticas positivas e negativas sobre a indústria da carne desde 2021. 
+Entre as estatísticas disponíveis estavam dados sobre a área associada ao desmatamento devido à produção de carne, a produção animal global, o consumo médio de carne e as emissões de metano e CO2eq associadas à indústria da carne.
+Além disso, a Maria teve ainda acesso a várias informações, as quais incluiam a quantidade de excrementos na água provenientes da pecuária, os químicos encontrados na água devido às práticas agrícolas, o uso de rações industriais na alimentação animal e a proporção de gado criado ao ar livre.
+Impressionada com a quantidade de dados disponíveis, Maria dedicou algum tempo a explorar estas estatísticas, de forma a ampliar a sua compreensão sobre como a indústria da carne afeta o meio ambiente e a saúde pública.
+A sua nova perspectiva incentivou-a a fazer escolhas alimentares mais conscientes e a procurar alternativas mais sustentáveis nas suas compras futuras, utilizando o QRMeat, recomendado pela sua amiga Joana.
