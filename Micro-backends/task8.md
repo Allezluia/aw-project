@@ -2,86 +2,109 @@
 
 <table border="1">
     <tr>
-        <th>BE services</th>
+        <th>BE services </th>
         <th>Method</th>
         <th>Schema</th>
         <th>Requests</th>
         <th>Responses</th>
     </tr>
-    <!-- Market Listings -->
+    <!-- GET all products -->
     <tr>
-        <td>Listagem de Mercados</td>
+        <td rowspan="5">Gestão do Catálogo de Produtos</td>
         <td>GET</td>
         <td>
+            type: object<br>
             properties:<br>
-            - marketId: integer<br>
-            - name: string<br>
-            - location: string<br>
-            - vendorCount: integer
+            - productId: integer (Identificador único do produto)<br>
+            - name: string (Nome do produto)<br>
+            - price: decimal (Preço do produto)<br>
+            - description: string (Descrição do produto)
         </td>
         <td>
             paths:<br>
-            /markets<br>
-            summary: Retrieves all market listings.<br>
+            /products<br>
+            summary: Recupera uma lista de todos os produtos.<br>
             parameters: none
         </td>
         <td>
             200:<br>
-            description: List of all markets.<br>
+            description: Lista de todos os produtos.<br>
             content: application/json;<br>
             schema: array<br>
-            items:<br>
-            $ref: '#/components/schemas/Market'
+            items: $ref: '#/components/schemas/Product'
         </td>
     </tr>
-    <!-- Market Detail -->
+    <!-- GET specific product -->
     <tr>
-        <td>Detalhes do Mercado</td>
         <td>GET</td>
         <td>
+            type: object<br>
             properties:<br>
-            - marketId: integer<br>
-            - name: string<br>
-            - location: string<br>
-            - description: string<br>
-            - vendorList: array
+            - productId: integer (Identificador único do produto)<br>
+            - name: string (Nome do produto)<br>
+            - price: decimal (Preço do produto)<br>
+            - description: string (Descrição do produto)
         </td>
         <td>
             paths:<br>
-            /markets/{marketId}<br>
-            summary: Retrieves detailed information for a specific market.<br>
+            /products/{product_id}<br>
+            summary: Recupera detalhes de um produto específico.<br>
             parameters:<br>
-            - name: marketId<br>
+            - name: product_id<br>
             - in: path<br>
             - required: true<br>
             - type: integer
         </td>
         <td>
             200:<br>
-            description: Detailed information of the market.<br>
+            description: Detalhes do produto especificado.<br>
             content: application/json;<br>
-            schema:<br>
-            $ref: '#/components/schemas/Market'
+            schema: $ref: '#/components/schemas/Product'
         </td>
     </tr>
-    <!-- Update Market -->
+    <!-- POST new product -->
     <tr>
-        <td>Atualização de Mercado</td>
-        <td>PUT</td>
+        <td>POST</td>
         <td>
+            type: object<br>
             properties:<br>
-            - marketId: integer<br>
-            - name: string<br>
-            - location: string<br>
-            - description: string<br>
-            - vendorList: array
+            - name: string (Nome do produto)<br>
+            - price: decimal (Preço do produto)<br>
+            - description: string (Descrição do produto)
         </td>
         <td>
             paths:<br>
-            /markets/{marketId}<br>
-            summary: Updates a specific market.<br>
+            /products<br>
+            summary: Adiciona um novo produto ao catálogo.<br>
+            requestBody:<br>
+            required: true<br>
+            content:<br>
+            application/json;<br>
+            schema: $ref: '#/components/schemas/Product'
+        </td>
+        <td>
+            201:<br>
+            description: Produto criado com sucesso.<br>
+            content: application/json;
+        </td>
+    </tr>
+    <!-- PUT update product -->
+    <tr>
+        <td>PUT</td>
+        <td>
+            type: object<br>
+            properties:<br>
+            - productId: integer (Identificador único do produto)<br>
+            - name: string (Nome do produto)<br>
+            - price: decimal (Preço do produto)<br>
+            - description: string (Descrição do produto)
+        </td>
+        <td>
+            paths:<br>
+            /products/{product_id}<br>
+            summary: Atualiza um produto específico no catálogo.<br>
             parameters:<br>
-            - name: marketId<br>
+            - name: product_id<br>
             - in: path<br>
             - required: true<br>
             - type: integer<br>
@@ -89,36 +112,36 @@
             required: true<br>
             content:<br>
             application/json;<br>
-            schema:<br>
-            $ref: '#/components/schemas/Market'
+            schema: $ref: '#/components/schemas/Product'
         </td>
         <td>
             200:<br>
-            description: Market updated successfully.<br>
+            description: Produto atualizado com sucesso.<br>
             content: application/json;
         </td>
     </tr>
-    <!-- Delete Market -->
+    <!-- DELETE specific product -->
     <tr>
-        <td>Exclusão de Mercado</td>
         <td>DELETE</td>
         <td>
+            type: object<br>
             properties:<br>
-            - marketId: integer
+            - productId: integer (Identificador único do produto)
         </td>
         <td>
             paths:<br>
-            /markets/{marketId}<br>
-            summary: Deletes a specific market.<br>
+            /products/{product_id}<br>
+            summary: Elimina um produto específico do catálogo.<br>
             parameters:<br>
-            - name: marketId<br>
+            - name: product_id<br>
             - in: path<br>
             - required: true<br>
             - type: integer
         </td>
         <td>
             204:<br>
-            description: Market deleted successfully.
+            description: Produto eliminado com sucesso.
         </td>
     </tr>
 </table>
+
