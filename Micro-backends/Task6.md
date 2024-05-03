@@ -2,6 +2,39 @@
 
 <table border="1">
     <tr>
+        <th>Business Capabilities</th>
+        <th>Architecture Capabilities</th>
+    </tr>
+    <tr>
+        <td>Gestão de Notícias</td>
+        <td> <<'service'>> Gestão de Notícias</td>
+    </tr>
+    <tr>
+        <td>Gestão do Catálogo de Produtos</td>
+        <td><<'service'>> Gestão do Catálogo de Produtos</td>
+    </tr>
+    <tr>
+        <td>Gestão de Avaliações e Feedback de Produtos</td>
+        <td><<'service'>> Gestão de Avaliações e Feedback de Produtos</td>
+    </tr>
+    <tr>
+        <td>Autenticação de Clientes</td>
+        <td><<'service'>> Gestão de Autenticação de Clientes</td>
+    </tr>
+    <tr>
+        <td>Gestão de Supermercados</td>
+        <td><<'service'>> Gestão de Dados de Supermercados</td>
+    </tr>
+    <tr>
+        <td>Análise de Dados e Estatísticas</td>
+        <td><<'service'>> Análise de Dados e Relatórios Estatísticos</td>
+    </tr>
+</table>
+
+<hr>
+
+<table border="1">
+    <tr>
         <th>BE services</th>
         <th>Service description</th>
         <th>Resource description</th>
