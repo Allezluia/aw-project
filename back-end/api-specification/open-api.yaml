@@ -1,0 +1,804 @@
+openapi: 3.0.0
+info:
+  title: "Aplicações na Web Project - Group 35"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Profile:
+      type: "object"
+      properties:
+        profile_id:
+          type: "number"
+          description: "Unique identifier"
+        profile_username:
+          type: "string"
+        profile_password:
+          type: "string"
+          format: "password"
+        profile_email:
+          type: "string"
+          format: "email"
+    Product:
+      type: "object"
+      properties:
+        product_id:
+          type: "number"
+          description: "Unique identifier"
+        product_name:
+          type: "string"
+        product_price:
+          type: "number"
+        product_image:
+          type: "string"
+          format: "url"
+        producer_name:
+          type: "string"
+        origin_location:
+          type: "string"
+        additional_info:
+          type: "object"
+          properties: 
+            disarming_weight:
+              type: "number"
+              minimum: 0
+              description: "Weight value in kg"
+            slaughter_weight:
+              type: "number"
+              minimum: 0
+              description: "Weight value in kg"
+            carcass_yield:
+              type: "number"
+              minimum: 0
+              maximum: 100
+              description: "Percentage value"
+            average_daily_gain:
+              type: "number"
+              minimum: 0
+              description: "Weight value in kg"
+            sale_value:
+              type: "number"
+              minimum: 0
+              description: "Price value in euros"
+            total_cost:
+              type: "number"
+              minimum: 0
+              description: "Price value in euros"
+            gross_margin:
+              type: "number"
+              minimum: 0
+              description: "Price value in euros"
+    Supermarket:
+      type: "object"
+      properties:
+        supermarket_id:
+          type: "number"
+          description: "Unique identifier"
+        supermarket_name:
+          type: "string"
+        supermarket_location:
+          type: "string"
+    Category:
+      type: "object"
+      properties:
+        category_id:
+          type: "number"
+          description: "Unique identifier"
+        category_name:
+          type: "string"
+    Saved_products:
+      type: "object"
+      properties:
+        profile_id:
+          type: "number"
+          description: "Product's unique identifier"
+        saved_products:
+          type: "array"
+          items:
+            type: "number"
+            description: "Saved Product's unique identifiers"
+    Supermarket_catalogs:
+      type: "object"
+      properties:
+        supermarket_id:
+          type: "number"
+          description: "Supermarket's unique identifier"
+        category_id:
+          type: "number"
+          description: "Category's unique identifier"
+        catalog_products:
+          type: "array"
+          items:
+            type: "number"
+            description: "Catalog Product's unique identifiers"
+    Rating:
+      type: "object"
+      properties:
+        profile_id:
+          type: "number"
+          description: "Profile's unique identifier"
+        product_id:
+          type: "number"
+          description: "Product's unique identifier"
+        number_of_stars:
+          type: "number"
+    QRScan:
+      type: "object"
+      properties:
+        qrcode_id:
+          type: "number"
+          description: "QRcode's unique identifier"
+        qr_code_url:
+          type: "string"
+          format: "url"
+          description: "URL to QRcode image"
+        product_id:
+          type: "number"
+          description: "Product's unique identifier"
+    News:
+      type: "object"
+      properties:
+        news_id:
+          type: "number"
+          description: "News' unique identifier"
+        news_text:
+          type: "string"
+        news_image:
+          type: "string"
+          format: "url"
+        news_journaL:
+          type: "string"
+    Statistics:
+      type: "object"
+      properties:
+        average_consuption:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        deflorestation_area:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        animal_production:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        ch4_emission:
+          type: "number"
+          description: "Weight value in tons"
+          minimum: 0
+        co2_emission:
+          type: "number"
+          description: "Weight value in tons"
+          minimum: 0
+        water_excrements:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        water_quimics:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        industrial_feed:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+        outdoor_cattle:
+          type: "number"
+          description: "Percentage value"
+          minimum: 0
+          maximum: 100
+    
+  parameters:
+    profile_id:
+      name: "profile_id"
+      description: "Profile's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    product_id:
+      name: "product_id"
+      description: "Product's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    supermarket_id:
+      name: "supermarket_id"
+      description: "Supermarket's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    category_id:
+      name: "category_id"
+      description: "Category's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    rating_id:
+      name: "rating_id"
+      description: "Ratings's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    qrcode_id:
+      name: "qrcode_id"
+      description: "QRcode's id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+    news_id:
+      name: "news_id"
+      description: "News' id"
+      in: path
+      required: True
+      schema:
+        type: "number"
+        
+paths:
+  /profiles/{profile_id}:
+    get:
+      tags:
+        - "Profile Service"
+      summary: "Search profile by its id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      responses:
+        "200":
+          description: "Successfully found profile by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        "404":
+          description: "Profile's id not found"
+    put:
+      tags:
+        - "Profile Service"
+      summary: "Update profile by its id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Profile'
+      responses:
+        "200":
+          description: "Successfully updated profile by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        "404":
+          description: "Profile's id not found"
+  /profiles:
+    get:
+      tags:
+        - "Profile Service"
+      summary: "Search profiles"
+      responses:
+        "200":
+          description: "Successfully found profiles"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Profile'
+    post:
+      tags:
+        - "Profile Service"
+      summary: "Create new profile"
+      responses:
+        "201":
+          description: "Successfully created profile"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+  /supermarkets/{supermarket_id}:
+    get:
+      tags:
+        - "Supermarket Service"
+      summary: "Search supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      responses:
+        "200":
+          description: "Successfully found supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+    put:
+      tags:
+        - "Supermarket Service"
+      summary: "Update supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket'
+      responses:
+        "200":
+          description: "Successfully updated supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+    delete:
+      tags:
+        - "Supermarket Service"
+      summary: "Delete supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      responses:
+        "200":
+          description: "Successfully deleted supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+  /supermarkets:
+    get:
+      tags:
+        - "Supermarket Service"
+      summary: "Search supermarket"
+      responses:
+        "200":
+          description: "Successfully found supermarkets"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Supermarket'
+    post:
+      tags:
+        - "Supermarket Service"
+      summary: "Create new supermarket"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket'
+      responses:
+        "201":
+          description: "Successfully created supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+  /products/{product_id}:
+    get:
+      tags:
+        - "Product Service"
+      summary: "Search product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully found product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+    put:
+      tags:
+        - "Product Service"
+      summary: "Update product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "200":
+          description: "Successfully updated product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+    delete:
+      tags:
+        - "Product Service"
+      summary: "Delete product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully deleted product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+  /products:
+    get:
+      tags:
+        - "Product Service"
+      summary: "Search products"
+      responses:
+        "200":
+          description: "Successfully found products"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+    post:
+      tags:
+        - "Product Service"
+      summary: "Create new product"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "201":
+          description: "Successfully created product"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+  /categories/{category_id}:
+    get:
+      tags:
+        - "Category Service"
+      summary: "Search category by its id"
+      parameters:
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully found category by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        "404":
+          description: "Category's id not found"
+    delete:
+      tags:
+        - "Category Service"
+      summary: "Delete category by its id"
+      parameters:
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully deleted category by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        "404":
+          description: "Category's id not found"
+  /categories:
+    get:
+      tags:
+        - "Category Service"
+      summary: "Search categories"
+      responses:
+        "200":
+          description: "Successfully found categories"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
+    post:
+      tags:
+        - "Category Service"
+      summary: "Create new category"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        "201":
+          description: "Successfully created category"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+  /profiles/{profile_id}/saved_products:
+    get:
+      tags:
+        - "Saved Products Service"
+      summary: "Search saved products by profile id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      responses:
+        "200":
+          description: "Successfully found saved products by profile id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+        "404":
+          description: "Profile's id not found"
+    put:
+      tags:
+        - "Saved Products Service"
+      summary: "Add new saved product to profile"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Saved_products'
+      responses:
+        "200":
+          description: "Successfully created category"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+  /profiles/{profile_id}/saved_products/{product_id}:
+    delete:
+      tags:
+        - "Saved Products Service"
+      summary: "Remove saved product from profile"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully deleted saved product from profile"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+        "404":
+          description: "Profile's or Product's id not found"
+  /supermarkets/{supermarket_id}/categories/{category_id}/products:
+    get:
+      tags:
+        - "Supermarket Catalog Service"
+      summary: "Search supermarket's products by supermarket id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully found supermarket's products by supermarket id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket' or Category's not found"
+    put:
+      tags:
+        - "Supermarket Catalog Service"
+      summary: "Add new product to supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket_catalogs'
+      responses:
+        "200":
+          description: "Successfully added product to supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket' or Category's not found"
+  /supermarkets/{supermarket_id}/categories/{category_id}:
+    delete:
+      tags:
+        - "Supermarket Catalog Service"
+      summary: "Remove category from supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully removed category from supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket's or Category's id not found"
+  /supermarkets/{supermarket_id}/categories/{category_id}/products/{product_id}:
+    delete:
+      tags:
+        - "Supermarket Catalog Service"
+      summary: "Remove product from supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/product_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully deleted product from supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket's, Category's or Product's id not found"
+  /products/{product_id}/ratings:
+    get:
+      tags:
+        - "Rating Service"
+      summary: "Search products's ratings by product id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully found products's ratings by product id"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: '#/components/schemas/Rating'
+        "404":
+          description: "Product's id not found"
+    put:
+      tags:
+        - "Rating Service"
+      summary: "Add new rating to product"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Rating'
+      responses:
+        "200":
+          description: "Successfully added rating"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rating'
+  /products/{product_id}/ratings/{rating_id}:
+    get:
+      tags:
+        - "Rating Service"
+      summary: "Search rating by rating id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+        - $ref: "#/components/parameters/rating_id"
+      responses:
+        "200":
+          description: "Successfully found rating by rating id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rating'
+        "404":
+          description: "Product's or Rating's id not found"
+  /qrcodes/{qrcode_id}:
+    get:
+      tags:
+        - "QRScan Service"
+      summary: "Search QRcode by its id"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      responses:
+        "200":
+          description: "Successfully found qrcode by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+        "404":
+          description: "QRcode's id not found"
+    delete:
+      tags:
+        - "QRScan Service"
+      summary: "Delete QRcode by its id"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      responses:
+        "200":
+          description: "Successfully deleted qrcode"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+  /qrcodes:
+    put:
+      tags:
+        - "QRScan Service"
+      summary: "Add QRcode"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QRScan'
+      responses:
+        "200":
+          description: "Successfully added QRcode"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+  /news:
+    get:
+      tags:
+        - "News Service"
+      summary: "Search recent news"
+      responses:
+        "200":
+          description: "Successfully got recent news"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: '#/components/schemas/News'
+  /news/{news_id}:
+    get:
+      tags:
+        - "News Service"
+      summary: "Get news by id"
+      parameters:
+        - $ref: "#/components/parameters/news_id"
+      responses:
+        "200":
+          description: "Successfully found news by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        "404":
+          description: "News' id not found"
+  /statistics:
+    get:
+      tags:
+        - "Statistics Service"
+      summary: "Get updated statistics"
+      responses:
+        "200":
+          description: "Successfully got recent statistics"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Statistics'
+  
