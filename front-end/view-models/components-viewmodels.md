@@ -223,6 +223,7 @@
         <td>props.positiveStatisticsButton</td></tr>
         </tr>
 </table>
+
 <table>
     <tr>
         <td>Views</td>
@@ -230,29 +231,65 @@
         <td>View models</td>
     </tr>
     <tr>
-        <td rowspan="18"><img src="image/Product_2.png" alt="Product2" width="400" height="400"></td>
-        <td rowspan="3">Header</td>
-        <td>props.title</td>
+        <td rowspan="5"><img src="image/Product_2.png" alt="Product2" width="400" height="400"></td>
+        <td rowspan="1">MainView</td>
+        <td>props.QrCode</td>
         </tr>
-        <td>props.text</td>
+        <tr><td rowspan="4">SingleCard</td>
+        <td>props.meatImage</td></tr>
         </tr>
-        <td>props.meatImg</td>
+        <td>props.meatTitle</td>
         </tr>
-        <tr><td rowspan="8">TextBox</td>
-        <td>props.textTitle</td></tr>
+        <td>props.meatDetalhes</td>
         </tr>
-        <td>props.textEmail</td>
+        <td>props.meatMoreDetails</td>
         </tr>
-        <td>props.inputEmail</td>
+        </tr><td rowspan="8"><img src="image/Product_3.png" alt="Product3" width="400" height="400"></td>
+        <td rowspan="8">MainView</td>
+        <td>props.meatImage</td>
         </tr>
-        <td>props.TextPassword</td>
+        <td>props.meatName</td>
         </tr>
-        <td>props.inputPassword</td>
+        <td>props.meatLocation</td>
         </tr>
-        <td>props.loginButton</td>
+        <td>props.meatPrice</td>
         </tr>
-        <td>props.textRegister</td>
+        <td>props.meatDetailsTitle</td>
         </tr>
-        <td>props.registerButton</td>
+        <td>props.expandButton</td>
+        </tr>
+        <td>props.feedbackTitle</td>
+        </tr>
+        <td>props.feedbackButton</td>
+        </tr>
+    </tr><td rowspan="14"><img src="image/Product_4.png" alt="Product4" width="400" height="400"></td>
+        <td rowspan="14">MainView</td>
+        <td>props.meatProducer</td>
+        </tr>
+        <td>props.meatOrigin</td>
+        </tr>
+        <td>props.meatGender</td>
+        </tr>
+        <td>props.meatAge</td>
+        </tr>
+        <td>props.meatRace</td>
+        </tr>
+        <td>props.meatPortion</td>
+        </tr>
+        <td>props.meatEstablishment</td>
+        </tr>
+         <td>props.meatTransport</td>
+        </tr>
+        <td>props.meatHealth</td>
+        </tr>
+        <td>props.meatTreatment</td>
+        </tr>
+        <td>props.meatState</td>
+        </tr>
+        <td>props.meatLife</td>
+        </tr>
+        <td>props.meatDeath</td>
+        </tr>
+        <td>props.moreDetailsButton</td>
         </tr>
 </table>
