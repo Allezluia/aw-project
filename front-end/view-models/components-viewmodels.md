@@ -200,13 +200,26 @@
         </tr>
         <tr><td rowspan="5"><img src="image/News_&_Statistics_4.png" alt="News_Statistics_4" width="400" height="400">
         <tr><td rowspan="1">mainView</td>
-        <td>props.PopUp</td></tr>
+        <td>props.statisticsTitle</td></tr>
         </tr>
-        <tr><td rowspan="3">PopUp</td>
-        <td>props.PopUpIcon</td></tr>
+        <td>props.statisticsTimeline</td></tr>
         </tr>
-        <td>props.PopUptextMenssage</td></tr>
+        <td>props.statisticsPercentage</td></tr>
         </tr>
-        <td>props.PopUpConfirmationButton</td></tr>
-        </tr>  
+        <td>props.statisticsPercentageTitle</td></tr>
+        </tr>
+        <td>props.statisticsPercentageGraphic</td></tr>
+        </tr>
+        <td>props.statisticsPercentageRations</td></tr>
+        </tr>
+        <td>props.statisticsRationsTitle</td></tr>
+        </tr>
+        <td>props.statisticsGraphicOpenAi</td></tr>
+        </tr>
+        <td>props.statisticsPercentageOpenAir</td></tr>
+        </tr>
+        <td>props.statisticsOpenAirTitle</td></tr>
+        </tr>
+        <td>props.positiveStatisticsButton</td></tr>
+        </tr>
 </table>
