@@ -299,3 +299,93 @@
         <td>props.animalValues</td>
         </tr>
 </table>
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
+        <td rowspan="13"><img src="image/Location_1.png" alt="Location1" width="400" height="400"></td>
+        <td rowspan="3">Header</td>
+        <td>props.title</td>
+        </tr>
+        <td>props.text</td>
+        </tr>
+        </tr><td>props.meatImg</td>
+        </tr>
+        <td rowspan="4">mainView</td>
+        <td>props.titleName</td>
+        </tr>
+        <td>props.searchSupermarket</td>
+        </tr>
+        <td>props.searchButton</td>
+        </tr>
+         <td>props.detailsList</td>
+        </tr>
+        <tr><td rowspan="6">Single Card</td>
+        <td>props.supermarketLocation</td></tr>
+        </tr>
+        <td>props.meatImage</td>
+        </tr>
+        <td>props.meatDescription</td>
+        </tr>
+        <td>props.meatWeight</td>
+        </tr>
+        <td>props.meatWeight</td>
+        </tr>
+        <td>props.meatPrice</td>
+        </tr>
+        <tr><td rowspan="12"><img src="image/Favourites_&_Feedback_1.png" alt="Feedback" width="500" height="400">
+        <tr><td rowspan="2">mainView</td>
+        <td>props.meatImage</td></tr>
+        </tr>
+        <td>props.textBox</td>
+        </tr>
+        <td rowspan="6">TextBox</td>
+        <td>props.tittle</td>
+        </tr>
+        </tr>
+        <td>props.price</td>
+        </tr>
+        <td>props.feedbackList</td>
+        </tr>
+        <td>props.textMenssage</td>
+        </tr>
+        <td>props.saveButton</td>
+        </tr>
+        <td>props.feedbackButton</td>
+        </tr>
+        <tr><td rowspan="3">Feedback Box</td>
+        <td>props.feedbackIcon</td></tr>
+        </tr>
+        <td>props.feedbackName</td>
+        </tr>
+        <td>props.feedbackRating</td>
+        </tr>
+        <tr><td rowspan="6"><img src="image/Favourites_&_Feedback_3.png" alt="Feedback" width="400" height="400">
+        <tr><td rowspan="1">mainView</td>
+        <td>props.PopUp</td></tr>
+        </tr>
+        <tr><td rowspan="4">PopUp</td>
+        <td>props.PopUpTitle</td></tr>
+        </tr>
+        <td>props.PopUpRating</td></tr>
+        </tr>
+        <td>props.PopUpCancelButton</td></tr>
+        </tr>
+        <td>props.PopUpSaveButton</td></tr>
+        </tr>
+        <tr><td rowspan="5"><img src="image/Favourites_&_Feedback_2.png" alt="Feedback" width="400" height="400">
+        <tr><td rowspan="1">mainView</td>
+        <td>props.PopUp</td></tr>
+        </tr>
+        <tr><td rowspan="3">PopUp</td>
+        <td>props.PopUpIcon</td></tr>
+        </tr>
+        <td>props.PopUptextMenssage</td></tr>
+        </tr>
+        <td>props.PopUpConfirmationButton</td></tr>
+        </tr>  
+</table>
