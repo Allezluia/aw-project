@@ -4,3 +4,7 @@
 <img src="image/Favourites_&_Feedback_1.png" alt="Feedback" width="520" height="400"></td>
 <img src="image/Favourites_&_Feedback_2.png" alt="Feedback2" width="450" height="400"></td>
 <img src="image/Favourites_&_Feedback_3.png" alt="Feedback3" width="450" height="400"></td>
+<img src="image/News_&_Statistics_1.png" alt="News_Statistics_1" width="400" height="400"></td>
+<img src="image/News_&_Statistics_2.png" alt="News_Statistics_2" width="400" height="400"></td>
+<img src="image/News_&_Statistics_3.png" alt="News_Statistics_3" width="400" height="400"></td>
+<img src="image/News_&_Statistics_4.png" alt="News_Statistics_4" width="400" height="400"></td>
