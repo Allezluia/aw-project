@@ -145,3 +145,68 @@
         <td>props.PopUpConfirmationButton</td></tr>
         </tr>  
 </table>
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
+        <td rowspan="8"><img src="image/News_&_Statistics_1.png" alt="News_Statistics_1" width="400" height="400"></td>
+        <td rowspan="5">mainView</td>
+        <td>props.image</td>
+        </tr>
+        <td>props.newsTitle</td>
+        </tr>
+        <td>props.newsDescription</td>
+        </tr>
+        <td>props.moreDescriptionButtom</td>
+        </tr>
+        <td>props.listNews</td>
+        </tr>
+        <tr><td rowspan="3">Single Card</td>
+        <td>props.newsImage</td></tr>
+        </tr>
+        <td>props.newsDate</td>
+        </tr>
+        <td>props.newsTitle</td>
+        </tr>
+        <tr><td rowspan="4"><img src="image/News_&_Statistics_2.png" alt="News_Statistics_2" width="400" height="400">
+        <tr><td rowspan="3">mainView</td>
+        <td>props.newsImage</td></tr>
+        </tr>
+        <td>props.newsTitle</td>
+        </tr>
+        <td>props.newsDescription</td>
+        </tr>
+        <tr><td rowspan="9"><img src="image/News_&_Statistics_3.png" alt="News_Statistics_3" width="400" height="400">
+        <tr><td rowspan="8">mainView</td>
+        <td>props.statisticsTitle</td></tr>
+        </tr>
+        <td>props.statisticsTimeline</td></tr>
+        </tr>
+        <td>props.statisticsPercentage</td></tr>
+        </tr>
+        <td>props.statisticsPercentageTitle</td></tr>
+        </tr>
+        <td>props.statisticsPercentageGraphic</td></tr>
+        </tr>
+        <td>props.statisticsEmissionNumber</td></tr>
+        </tr>
+        <td>props.statisticsEmissionTitle</td></tr>
+        </tr>
+        <td>props.positiveStatisticsButton</td></tr>
+        </tr>
+        <tr><td rowspan="5"><img src="image/News_&_Statistics_4.png" alt="News_Statistics_4" width="400" height="400">
+        <tr><td rowspan="1">mainView</td>
+        <td>props.PopUp</td></tr>
+        </tr>
+        <tr><td rowspan="3">PopUp</td>
+        <td>props.PopUpIcon</td></tr>
+        </tr>
+        <td>props.PopUptextMenssage</td></tr>
+        </tr>
+        <td>props.PopUpConfirmationButton</td></tr>
+        </tr>  
+</table>
