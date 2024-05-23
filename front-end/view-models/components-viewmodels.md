@@ -40,7 +40,7 @@
         <td>View models</td>
     </tr>
     <tr>
-        <td rowspan="17"><img src="image/profile.png" alt="profile" width="400" height="400"></td>
+        <td rowspan="18"><img src="image/profile.png" alt="profile" width="400" height="400"></td>
         <td rowspan="3">Header</td>
         <td>props.title</td>
         </tr>
@@ -48,8 +48,10 @@
         </tr>
         <td>props.meatImg</td>
         </tr>
-        <tr><td rowspan="7">TextBox</td>
+        <tr><td rowspan="8">TextBox</td>
         <td>props.Icon</td></tr>
+        </tr>
+        <td>props.takeFoto</td></tr>
         </tr>
         <td>props.textName</td>
         </tr>
