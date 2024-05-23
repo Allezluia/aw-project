@@ -292,4 +292,10 @@
         </tr>
         <td>props.moreDetailsButton</td>
         </tr>
+    </tr><td rowspan="2"><img src="image/Product_5.png" alt="Product5" width="400" height="400"></td>
+        <td rowspan="2">MainView</td>
+        <td>props.animalDetails</td>
+        </tr>
+        <td>props.animalValues</td>
+        </tr>
 </table>
