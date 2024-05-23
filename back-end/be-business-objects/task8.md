@@ -1,254 +1,747 @@
 # Task 8
-
-<table border="1">
+<table>
     <tr>
-        <th>BE services </th>
-        <th>Method</th>
-        <th>Schema</th>
-        <th>Requests</th>
-        <th>Responses</th>
+        <th>BE Services</th>
+        <th>Request</th>
+        <th>Request Schemas</th>
+        <th>Response Schemas</th>
     </tr>
-    <!-- GET all products -->
     <tr>
-        <td rowspan="5">Gestão do Catálogo de Produtos</td>
-        <td>GET</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - productId: integer (Identificador único do produto)<br>
-            - name: string (Nome do produto)<br>
-            - price: decimal (Preço do produto)<br>
-            - description: string (Descrição do produto)
-        </td>
-        <td>
-            paths:<br>
-            /products<br>
-            summary: Recupera uma lista de todos os produtos.<br>
-            parameters: none
-        </td>
-        <td>
-            200:<br>
-            description: Lista de todos os produtos.<br>
-            content: application/json;<br>
-            schema: array<br>
-            items: $ref: '#/components/schemas/Product'
-        </td>
+        <td rowspan="4">Profile Service</td>
+        <td>POST /profiles</td>
+        <td><pre>
+            tags:
+        - "Profile Service"
+      summary: "Create new profile"
+      responses:
+        "201":
+          description: "Successfully created profile"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        </pre></td>
+        <td><pre>
+            tags:
+        - "Profile Service"
+      summary: "Create new profile"
+      responses:
+        "201":
+          description: "Successfully created profile"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        </pre></td>
     </tr>
-    <!-- GET specific product -->
     <tr>
-        <td>GET</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - productId: integer (Identificador único do produto)<br>
-            - name: string (Nome do produto)<br>
-            - price: decimal (Preço do produto)<br>
-            - description: string (Descrição do produto)
-        </td>
-        <td>
-            paths:<br>
-            /products/{product_id}<br>
-            summary: Recupera detalhes de um produto específico.<br>
-            parameters:<br>
-            - name: product_id<br>
-            - in: path<br>
-            - required: true<br>
-            - type: integer
-        </td>
-        <td>
-            200:<br>
-            description: Detalhes do produto especificado.<br>
-            content: application/json;<br>
-            schema: $ref: '#/components/schemas/Product'
-        </td>
+        <td>GET /profiles</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Profile Service"
+      summary: "Search profiles"
+      responses:
+        "200":
+          description: "Successfully found profiles"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Profile'
+        </pre></td>
     </tr>
-    <!-- POST new product -->
     <tr>
-        <td>POST</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - name: string (Nome do produto)<br>
-            - price: decimal (Preço do produto)<br>
-            - description: string (Descrição do produto)
-        </td>
-        <td>
-            paths:<br>
-            /products<br>
-            summary: Adiciona um novo produto ao catálogo.<br>
-            requestBody:<br>
-            required: true<br>
-            content:<br>
-            application/json;<br>
-            schema: $ref: '#/components/schemas/Product'
-        </td>
-        <td>
-            201:<br>
-            description: Produto criado com sucesso.<br>
-            content: application/json;
-        </td>
+        <td>GET /profiles/{profile_id}</td>
+        <td></td>
+        <td><pre>
+      tags:
+        - "Profile Service"
+      summary: "Search profile by its id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      responses:
+        "200":
+          description: "Successfully found profile by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        "404":
+          description: "Profile's id not found"
+        </pre></td>
     </tr>
-    <!-- PUT update product -->
     <tr>
-        <td>PUT</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - productId: integer (Identificador único do produto)<br>
-            - name: string (Nome do produto)<br>
-            - price: decimal (Preço do produto)<br>
-            - description: string (Descrição do produto)
-        </td>
-        <td>
-            paths:<br>
-            /products/{product_id}<br>
-            summary: Atualiza um produto específico no catálogo.<br>
-            parameters:<br>
-            - name: product_id<br>
-            - in: path<br>
-            - required: true<br>
-            - type: integer<br>
-            requestBody:<br>
-            required: true<br>
-            content:<br>
-            application/json;<br>
-            schema: $ref: '#/components/schemas/Product'
-        </td>
-        <td>
-            200:<br>
-            description: Produto atualizado com sucesso.<br>
-            content: application/json;
-        </td>
+        <td>PUT /profiles/{profile_id}</td>
+        <td><pre>
+      tags:
+        - "Profile Service"
+      summary: "Update profile by its id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Profile'
+        </pre></td>
+        <td><pre>
+      responses:
+        "200":
+          description: "Successfully updated profile by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+        "404":
+          description: "Profile's id not found"
+        </pre></td>
     </tr>
-    <!-- DELETE specific product -->
+    <!-------- Supermarket Service ------->
     <tr>
-        <td>DELETE</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - productId: integer (Identificador único do produto)
-        </td>
-        <td>
-            paths:<br>
-            /products/{product_id}<br>
-            summary: Elimina um produto específico do catálogo.<br>
-            parameters:<br>
-            - name: product_id<br>
-            - in: path<br>
-            - required: true<br>
-            - type: integer
-        </td>
-        <td>
-            204:<br>
-            description: Produto eliminado com sucesso.
-        </td>
+        <td rowspan="5">Supermarket Service</td>
+        <td>GET /supermarkets/{supermarket_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Supermarket Service"
+      summary: "Search supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      responses:
+        "200":
+          description: "Successfully found supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+        </pre></td>
     </tr>
-    <!-- GET all statistics -->
     <tr>
-        <td rowspan="4">Estatísticas</td>
-        <td>GET</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - statisticsId: integer (Identificador único das estatísticas)<br>
-            - category: string (Categoria das estatísticas)<br>
-            - value: decimal (Valor associado)<br>
-            - timestamp: datetime (Data e hora da geração da estatística)
-        </td>
-        <td>
-            paths:<br>
-            /statistics<br>
-            summary: Recupera todas as estatísticas.<br>
-            parameters: none
-        </td>
-        <td>
-            200:<br>
-            description: Lista de todas as estatísticas.<br>
-            content: application/json;<br>
-            schema: array<br>
-            items: $ref: '#/components/schemas/Statistics'
-        </td>
+        <td>PUT /supermarkets/{supermarket_id}</td>
+        <td><pre>
+            tags:
+        - "Supermarket Service"
+      summary: "Update supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully updated supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+        </pre></td>
     </tr>
-    <!-- POST new statistics -->
     <tr>
-        <td>POST</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - category: string (Categoria das estatísticas)<br>
-            - value: decimal (Valor associado)<br>
-            - timestamp: datetime (Data e hora da geração da estatística)
-        </td>
-        <td>
-            paths:<br>
-            /statistics/{statistics_id}<br>
-            summary: Adiciona novas estatísticas para uma categoria específica.<br>
-            requestBody:<br>
-            required: true<br>
-            content:<br>
-            application/json;<br>
-            schema: $ref: '#/components/schemas/Statistics'
-        </td>
-        <td>
-            201:<br>
-            description: Estatísticas criadas com sucesso.<br>
-            content: application/json;
-        </td>
+        <td>DELETE /supermarkets/{supermarket_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Supermarket Service"
+      summary: "Delete supermarket by its id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+      responses:
+        "200":
+          description: "Successfully deleted supermarket by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        "404":
+          description: "Supermarket's id not found"
+        </pre></td>
     </tr>
-    <!-- PUT update statistics -->
     <tr>
-        <td>PUT</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - statisticsId: integer (Identificador único das estatísticas)<br>
-            - category: string (Categoria das estatísticas)<br>
-            - value: decimal (Valor atualizado)<br>
-            - timestamp: datetime (Data e hora da atualização)
-        </td>
-        <td>
-            paths:<br>
-            /statistics/{statistics_id}<br>
-            summary: Atualiza estatísticas existentes.<br>
-            parameters:<br>
-            - name: statistics_id<br>
-            - in: path<br>
-            - required: true<br>
-            - type: integer<br>
-            requestBody:<br>
-            required: true<br>
-            content:<br>
-            application/json;<br>
-            schema: $ref: '#/components/schemas/Statistics'
-        </td>
-        <td>
-            200:<br>
-            description: Estatísticas atualizadas com sucesso.<br>
-            content: application/json;
-        </td>
+        <td>GET /supermarkets</td>
+        <td></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully found supermarkets"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Supermarket'
+        </pre></td>
     </tr>
-    <!-- DELETE all statistics -->
     <tr>
-        <td>DELETE</td>
-        <td>
-            type: object<br>
-            properties:<br>
-            - statisticsId: integer (Identificador único das estatísticas)
-        </td>
-        <td>
-            paths:<br>
-            /statistics/{statistics_id}<br>
-            summary: Elimina todas as estatísticas.<br>
-            parameters:<br>
-            - name: statistics_id<br>
-            - in: path<br>
-            - required: true<br>
-            - type: integer
-        </td>
-        <td>
-            204:<br>
-            description: Estatísticas eliminadas com sucesso.
-        </td>
+        <td>POST /supermarkets</td>
+        <td><pre>
+            tags:
+        - "Supermarket Service"
+      summary: "Create new supermarket"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket'
+        </pre></td>
+        <td><pre>
+            responses:
+        "201":
+          description: "Successfully created supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket'
+        </pre></td>
+    </tr>
+    <!-------- Product Service ------->
+    <tr>
+        <td rowspan="5">Product Service</td>
+        <td>POST /products</td>
+        <td><pre>
+            tags:
+        - "Product Service"
+      summary: "Create new product"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+        </pre></td>
+        <td><pre>
+            responses:
+        "201":
+          description: "Successfully created product"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /products</td>
+        <td></td>
+        <td><pre>
+            get:
+      tags:
+        - "Product Service"
+      summary: "Search products"
+      responses:
+        "200":
+          description: "Successfully found products"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /products/{product_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Product Service"
+      summary: "Search product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully found product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /products/{product_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Product Service"
+      summary: "Delete product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully deleted product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>PUT /products/{product_id}</td>
+        <td><pre>
+            tags:
+        - "Product Service"
+      summary: "Update product by its id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully updated product by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: "Product's id not found"
+        </pre></td>
+    </tr>
+    <!------ Category Service -------->
+    <tr>
+        <td rowspan="4">Category Service</td>
+        <td>POST /categories</td>
+        <td><pre>
+            tags:
+        - "Category Service"
+      summary: "Create new category"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+        </pre></td>
+        <td><pre>
+            responses:
+        "201":
+          description: "Successfully created category"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /categories</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Category Service"
+      summary: "Search categories"
+      responses:
+        "200":
+          description: "Successfully found categories"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /categories/{category_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Category Service"
+      summary: "Search category by its id"
+      parameters:
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully found category by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        "404":
+          description: "Category's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /categories/{category_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Category Service"
+      summary: "Delete category by its id"
+      parameters:
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully deleted category by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        "404":
+          description: "Category's id not found"
+        </pre></td>
+    </tr>
+    <!------ News Service -------->
+    <tr>
+        <td rowspan="2">News Service</td>
+        <td>GET /news</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "News Service"
+      summary: "Search recent news"
+      responses:
+        "200":
+          description: "Successfully got recent news"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: '#/components/schemas/News'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /news/{news_id}</td>
+        <td></td>
+        <td><pre>tags:
+        - "News Service"
+      summary: "Get news by id"
+      parameters:
+        - $ref: "#/components/parameters/news_id"
+      responses:
+        "200":
+          description: "Successfully found news by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        "404":
+          description: "News' id not found"</pre></td>
+    </tr>
+     <!------ Statistics Service -------->
+    <tr>
+        <td rowspan="1">Statistics Service</td>
+        <td>GET /statistics</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Statistics Service"
+      summary: "Get updated statistics"
+      responses:
+        "200":
+          description: "Successfully got recent statistics"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Statistics'
+        </pre></td>
+    </tr>
+     <!------ Saved Products Service -------->
+    <tr>
+        <td rowspan="3">Saved Products Service</td>
+        <td>GET /profiles/{profile_id}/saved-products</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Saved Products Service"
+      summary: "Search saved products by profile id"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      responses:
+        "200":
+          description: "Successfully found saved products by profile id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+        "404":
+          description: "Profile's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>PUT /profiles/{profile_id}/saved-products</td>
+        <td><pre>
+            tags:
+        - "Saved Products Service"
+      summary: "Add new saved product to profile"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Saved_products'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully created category"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /profiles/{profile_id}/saved-products/{product_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Saved Products Service"
+      summary: "Remove saved product from profile"
+      parameters:
+        - $ref: "#/components/parameters/profile_id"
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully deleted saved product from profile"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Saved_products'
+        "404":
+          description: "Profile's or Product's id not found"
+        </pre></td>
+    </tr>
+    <!------ Supermarket Catalog Service -------->
+    <tr>
+        <td rowspan="4">Supermarket Catalog Service</td>
+        <td>GET /supermarkets/{supermarket_id}/categories/{category_id}/products</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Supermarket Catalog Service"
+      summary: "Search supermarket's products by supermarket id"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully found supermarket's products by supermarket id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket' or Category's not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>PUT /supermarkets/{supermarket_id}/categories/{category_id}/products</td>
+        <td><pre>
+            tags:
+        - "Supermarket Catalog Service"
+      summary: "Add new product to supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Supermarket_catalogs'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully added product to supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket' or Category's not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /supermarkets/{supermarket_id}/categories/{category_id}</td>
+        <td></td>
+        <td><pre>
+             tags:
+        - "Supermarket Catalog Service"
+      summary: "Remove category from supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully removed category from supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket's or Category's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /supermarkets/{supermarket_id}/categories/{category_id}/products/{product_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Supermarket Catalog Service"
+      summary: "Remove product from supermarket"
+      parameters:
+        - $ref: "#/components/parameters/supermarket_id"
+        - $ref: "#/components/parameters/product_id"
+        - $ref: "#/components/parameters/category_id"
+      responses:
+        "200":
+          description: "Successfully deleted product from supermarket"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supermarket_catalogs'
+        "404":
+          description: "Supermarket's, Category's or Product's id not found"
+        </pre></td>
+    </tr>
+    <!------ Rating Service -------->
+    <tr>
+        <td rowspan="3">Rating Service</td>
+        <td>GET /products/{product_id}/ratings</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "Rating Service"
+      summary: "Search products's ratings by product id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      responses:
+        "200":
+          description: "Successfully found products's ratings by product id"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: '#/components/schemas/Rating'
+        "404":
+          description: "Product's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>PUT /products/{product_id}/ratings</td>
+        <td><pre>
+            tags:
+        - "Rating Service"
+      summary: "Add new rating to product"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Rating'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully added rating"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rating'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>GET /products/{product_id}/ratings/{rating_id}</td>
+        <td></td>
+        <td><pre>
+            get:
+      tags:
+        - "Rating Service"
+      summary: "Search rating by rating id"
+      parameters:
+        - $ref: "#/components/parameters/product_id"
+        - $ref: "#/components/parameters/rating_id"
+      responses:
+        "200":
+          description: "Successfully found rating by rating id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rating'
+        "404":
+          description: "Product's or Rating's id not found"
+        </pre></td>
+    </tr>
+    <!------ QRScan Service -------->
+    <tr>
+        <td rowspan="3">QRScan Service</td>
+        <td>GET /qrcodes/{qrcode_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "QRScan Service"
+      summary: "Search QRcode by its id"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      responses:
+        "200":
+          description: "Successfully found qrcode by id"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+        "404":
+          description: "QRcode's id not found"
+        </pre></td>
+    </tr>
+    <tr>
+        <td>DELETE /qrcodes/{qrcode_id}</td>
+        <td></td>
+        <td><pre>
+            tags:
+        - "QRScan Service"
+      summary: "Delete QRcode by its id"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      responses:
+        "200":
+          description: "Successfully deleted qrcode"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+        </pre></td>
+    </tr>
+    <tr>
+        <td>PUT /qrcodes</td>
+        <td><pre>
+            tags:
+        - "QRScan Service"
+      summary: "Add QRcode"
+      parameters:
+        - $ref: "#/components/parameters/qrcode_id"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QRScan'
+        </pre></td>
+        <td><pre>
+            responses:
+        "200":
+          description: "Successfully added QRcode"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QRScan'
+        </pre></td>
     </tr>
 </table>
-
