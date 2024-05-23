@@ -40,6 +40,38 @@
         <td>View models</td>
     </tr>
     <tr>
+        <td rowspan="17"><img src="image/profile.png" alt="profile" width="400" height="400"></td>
+        <td rowspan="3">Header</td>
+        <td>props.title</td>
+        </tr>
+        <td>props.text</td>
+        </tr>
+        <td>props.meatImg</td>
+        </tr>
+        <tr><td rowspan="7">TextBox</td>
+        <td>props.Icon</td></tr>
+        </tr>
+        <td>props.textName</td>
+        </tr>
+        <td>props.textEmail</td>
+        </tr>
+        <td>props.myAccountButton</td>
+        </tr>
+        <td>props.definitionsButton</td>
+        </tr>
+        <td>props.contactButton</td>
+        </tr>
+        <td>props.logoutButton</td>
+        </tr>
+</table>
+
+<table>
+    <tr>
+        <td>Views</td>
+        <td>Components</td>
+        <td>View models</td>
+    </tr>
+    <tr>
         <td rowspan="7"><img src="image/Favourites_&_Feedback_4.png" alt="Favourite" width="500" height="400"></td>
         <td rowspan="2">mainView</td>
         <td>props.titleName</td>
