@@ -6,7 +6,7 @@
         <td>View models</td>
     </tr>
     <tr>
-        <td rowspan="18"><img src="./Authentication.png" alt="Authenticaton" width="100" height="200"></td>
+        <td rowspan="18"><img src="image/Authentication.png" alt="Authenticaton" width="300" height="400"></td>
         <td rowspan="3">Header</td>
         <td>props.title</td>
         </tr>
