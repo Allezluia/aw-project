@@ -337,34 +337,22 @@
         </tr>
         <td>props.meatPrice</td>
         </tr>
-        <tr><td rowspan="12"><img src="image/Favourites_&_Feedback_1.png" alt="Feedback" width="500" height="400">
-        <tr><td rowspan="2">mainView</td>
-        <td>props.meatImage</td></tr>
+        <tr><td rowspan="7"><img src="image/Location_2.png" alt="Location2" width="400" height="400"></td>
+        <tr><td rowspan="4">MainView</td>
+        <td>props.map</td>
         </tr>
-        <td>props.textBox</td>
+        <td>props.mapLocation</td>
         </tr>
-        <td rowspan="6">TextBox</td>
-        <td>props.tittle</td>
+        <td>props.categoryTitle</td>
         </tr>
+        <td>props.categoryList</td>
         </tr>
-        <td>props.price</td>
+        <td rowspan="2">CategoryCard</td>
+        <td>props.meatType</td>
         </tr>
-        <td>props.feedbackList</td>
+        <td>props.meatImage</td>
         </tr>
-        <td>props.textMenssage</td>
-        </tr>
-        <td>props.saveButton</td>
-        </tr>
-        <td>props.feedbackButton</td>
-        </tr>
-        <tr><td rowspan="3">Feedback Box</td>
-        <td>props.feedbackIcon</td></tr>
-        </tr>
-        <td>props.feedbackName</td>
-        </tr>
-        <td>props.feedbackRating</td>
-        </tr>
-        <tr><td rowspan="6"><img src="image/Favourites_&_Feedback_3.png" alt="Feedback" width="400" height="400">
+        <tr><td rowspan="6"><img src="image/Location_3.png" alt="Location3" width="400" height="400"></td>
         <tr><td rowspan="1">mainView</td>
         <td>props.PopUp</td></tr>
         </tr>
@@ -376,16 +364,5 @@
         <td>props.PopUpCancelButton</td></tr>
         </tr>
         <td>props.PopUpSaveButton</td></tr>
-        </tr>
-        <tr><td rowspan="5"><img src="image/Favourites_&_Feedback_2.png" alt="Feedback" width="400" height="400">
-        <tr><td rowspan="1">mainView</td>
-        <td>props.PopUp</td></tr>
-        </tr>
-        <tr><td rowspan="3">PopUp</td>
-        <td>props.PopUpIcon</td></tr>
-        </tr>
-        <td>props.PopUptextMenssage</td></tr>
-        </tr>
-        <td>props.PopUpConfirmationButton</td></tr>
-        </tr>  
+        </tr> 
 </table>
