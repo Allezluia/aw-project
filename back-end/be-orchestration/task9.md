@@ -1,6 +1,24 @@
 # Task 9
 
+O Rating Service pode necessitar orquestrar com o Profile Service para associar avaliações a utilizador autenticados e com o Product Service para associar avaliações a produtos.
+
+## Fluxo
+1. Utilizador envia avaliação para o Orquestrador.
+2. Orquestrador valida a autenticação do utilizador através do Profile Service.
+3. Orquestrador registra a avaliação no Rating Service.
+4. Orquestrador atualiza a média de avaliações no Product Service.
+5. Orquestrador retorna confirmação ao utilizador.
+
+A implementação de um orquestrador para o Rating Service garante que todas as etapas do processo de avaliação sejam gerenciadas de forma eficiente e segura, proporcionando uma experiência de utilizador suave e consistente.
+
+
 <table>
+  <tr>
+        <th>BE Services</th>
+        <th>Request</th>
+        <th>Request Schemas</th>
+        <th>Response Schemas</th>
+    </tr>
   <tr>
         <td rowspan="3">Rating Service</td>
         <td>GET /products/{product_id}/ratings</td>
