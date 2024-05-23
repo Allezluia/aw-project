@@ -198,8 +198,8 @@
         </tr>
         <td>props.positiveStatisticsButton</td></tr>
         </tr>
-        <tr><td rowspan="5"><img src="image/News_&_Statistics_4.png" alt="News_Statistics_4" width="400" height="400">
-        <tr><td rowspan="1">mainView</td>
+        <tr><td rowspan="12"><img src="image/News_&_Statistics_4.png" alt="News_Statistics_4" width="400" height="400">
+        <tr><td rowspan="11">mainView</td>
         <td>props.statisticsTitle</td></tr>
         </tr>
         <td>props.statisticsTimeline</td></tr>
