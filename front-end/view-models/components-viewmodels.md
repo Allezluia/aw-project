@@ -352,17 +352,25 @@
         </tr>
         <td>props.meatImage</td>
         </tr>
-        <tr><td rowspan="6"><img src="image/Location_3.png" alt="Location3" width="400" height="400"></td>
-        <tr><td rowspan="1">mainView</td>
-        <td>props.PopUp</td></tr>
+        <tr><td rowspan="10"><img src="image/Location_3.png" alt="Location3" width="400" height="400"></td>
+        <tr><td rowspan="6">mainView</td>
+        <td>props.meatLocation</td>
         </tr>
-        <tr><td rowspan="4">PopUp</td>
-        <td>props.PopUpTitle</td></tr>
+        <td>props.meatTypeButton</td>
         </tr>
-        <td>props.PopUpRating</td></tr>
+        <td>props.highlightedTitle</td>
         </tr>
-        <td>props.PopUpCancelButton</td></tr>
+        <td>props.meatPromotions</td>
         </tr>
-        <td>props.PopUpSaveButton</td></tr>
-        </tr> 
+        <td>props.meatTypeListTitle</td>
+        </tr>
+        <td>props.meatTypeList</td>
+        </tr>
+        <tr><td rowspan="3">SingleCard</td>
+        <td>props.meatImage</td></tr>
+        </tr>
+        <td>props.meatTitle</td></tr>
+        </tr>
+        <td>props.meatPrice</td></tr>
+        </tr>
 </table>
