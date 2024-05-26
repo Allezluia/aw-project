@@ -688,12 +688,12 @@
         <td><pre>
             tags:
         - "QRScan Service"
-      summary: "Search QRcode by its id"
+      summary: "Search QRcode by id"
       parameters:
         - $ref: "#/components/parameters/qrcode_id"
       responses:
         "200":
-          description: "Successfully found qrcode by id"
+          description: "Successfully found qrcode "
           content:
             application/json:
               schema:
@@ -708,7 +708,7 @@
         <td><pre>
             tags:
         - "QRScan Service"
-      summary: "Delete QRcode by its id"
+      summary: "Delete QRcode by id"
       parameters:
         - $ref: "#/components/parameters/qrcode_id"
       responses:
