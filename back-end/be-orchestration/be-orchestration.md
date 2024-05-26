@@ -1,4 +1,4 @@
-# Task 9 - BE - ORCHESTRATION
+# Task 9 : BE - ORCHESTRATION
 
 O Rating Service pode necessitar orquestrar com o Profile Service para associar avaliações a utilizador autenticados e com o Product Service para associar avaliações a produtos.
 
