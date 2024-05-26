@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: "Aplicações na Web Project - Group 35"
+  title: "Projeto na Cadeira de Apliacação na Web Grupo 9"
   version: "1.0.0"
 
 servers:
