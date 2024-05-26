@@ -517,14 +517,14 @@
           description: "Profile's or Product's id not found"
         </pre></td>
     </tr>
-    <!------ Supermarket Catalog Service -------->
+    <!------ Supermarket Categories Service -------->
     <tr>
-        <td rowspan="4">Supermarket Catalog Service</td>
+        <td rowspan="4">Supermarket Categories Service</td>
         <td>GET /supermarkets/{supermarket_id}/categories/{category_id}/products</td>
         <td></td>
         <td><pre>
             tags:
-        - "Supermarket Catalog Service"
+        - "Supermarket Categories Service"
       summary: "Search supermarket's products by supermarket id"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
@@ -535,7 +535,7 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Supermarket_catalogs'
+                $ref: '#/components/schemas/Supermarket_categories'
         "404":
           description: "Supermarket' or Category's not found"
         </pre></td>
@@ -544,7 +544,7 @@
         <td>PUT /supermarkets/{supermarket_id}/categories/{category_id}/products</td>
         <td><pre>
             tags:
-        - "Supermarket Catalog Service"
+        - "Supermarket Categories Service"
       summary: "Add new product to supermarket"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
@@ -553,7 +553,7 @@
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Supermarket_catalogs'
+              $ref: '#/components/schemas/Supermarket_categories'
         </pre></td>
         <td><pre>
             responses:
@@ -562,7 +562,7 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Supermarket_catalogs'
+                $ref: '#/components/schemas/Supermarket_categories'
         "404":
           description: "Supermarket' or Category's not found"
         </pre></td>
@@ -572,7 +572,7 @@
         <td></td>
         <td><pre>
              tags:
-        - "Supermarket Catalog Service"
+        - "Supermarket Categories Service"
       summary: "Remove category from supermarket"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
@@ -583,7 +583,7 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Supermarket_catalogs'
+                $ref: '#/components/schemas/Supermarket_categories'
         "404":
           description: "Supermarket's or Category's id not found"
         </pre></td>
@@ -593,7 +593,7 @@
         <td></td>
         <td><pre>
             tags:
-        - "Supermarket Catalog Service"
+        - "Supermarket Categories Service"
       summary: "Remove product from supermarket"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
@@ -605,79 +605,79 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Supermarket_catalogs'
+                $ref: '#/components/schemas/Supermarket_categories'
         "404":
           description: "Supermarket's, Category's or Product's id not found"
         </pre></td>
     </tr>
-    <!------ Rating Service -------->
+    <!------ Feedback Service -------->
     <tr>
-        <td rowspan="3">Rating Service</td>
-        <td>GET /products/{product_id}/ratings</td>
+        <td rowspan="3">Feedback Service</td>
+        <td>GET /products/{product_id}/feddback</td>
         <td></td>
         <td><pre>
             tags:
-        - "Rating Service"
-      summary: "Search products's ratings by product id"
+        - "Feedback Service"
+      summary: "Search products's feedback by product id"
       parameters:
         - $ref: "#/components/parameters/product_id"
       responses:
         "200":
-          description: "Successfully found products's ratings by product id"
+          description: "Successfully found products's feedback by product id"
           content:
             application/json:
               schema:
                 type: "array"
                 items:
-                  $ref: '#/components/schemas/Rating'
+                  $ref: '#/components/schemas/Feedback'
         "404":
           description: "Product's id not found"
         </pre></td>
     </tr>
     <tr>
-        <td>PUT /products/{product_id}/ratings</td>
+        <td>PUT /products/{product_id}/feedback</td>
         <td><pre>
             tags:
-        - "Rating Service"
-      summary: "Add new rating to product"
+        - "Feedback Service"
+      summary: "Add new feedback to product"
       parameters:
         - $ref: "#/components/parameters/product_id"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Rating'
+              $ref: '#/components/schemas/Feedback'
         </pre></td>
         <td><pre>
             responses:
         "200":
-          description: "Successfully added rating"
+          description: "Successfully added feedback"
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Rating'
+                $ref: '#/components/schemas/Feedback'
         </pre></td>
     </tr>
     <tr>
-        <td>GET /products/{product_id}/ratings/{rating_id}</td>
+        <td>GET /products/{product_id}/feedback/{feedback_id}</td>
         <td></td>
         <td><pre>
             get:
       tags:
-        - "Rating Service"
-      summary: "Search rating by rating id"
+        - "Feedback Service"
+      summary: "Search Feedback by feedback id"
       parameters:
         - $ref: "#/components/parameters/product_id"
-        - $ref: "#/components/parameters/rating_id"
+        - $ref: "#/components/parameters/feedback_id"
       responses:
         "200":
-          description: "Successfully found rating by rating id"
+          description: "Successfully found feedback by feedback id"
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Rating'
+                $ref: '#/components/schemas/Feedback'
         "404":
-          description: "Product's or Rating's id not found"
+          description: "Product's or Feedback's id not found"
         </pre></td>
     </tr>
     <!------ QRScan Service -------->
