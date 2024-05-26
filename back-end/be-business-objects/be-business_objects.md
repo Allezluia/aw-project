@@ -15,7 +15,7 @@
       summary: "Create new profile"
       responses:
         "201":
-          description: "Successfully created profile"
+          description: "Successfully created new profile"
           content:
             application/json:
               schema:
@@ -27,7 +27,7 @@
       summary: "Create new profile"
       responses:
         "201":
-          description: "Successfully created profile"
+          description: "Successfully created new profile"
           content:
             application/json:
               schema:
@@ -58,7 +58,7 @@
         <td><pre>
       tags:
         - "Profile Service"
-      summary: "Search profile by its id"
+      summary: "Search profile by id"
       parameters:
         - $ref: "#/components/parameters/profile_id"
       responses:
@@ -77,7 +77,7 @@
         <td><pre>
       tags:
         - "Profile Service"
-      summary: "Update profile by its id"
+      summary: "Update profile by id"
       parameters:
         - $ref: "#/components/parameters/profile_id"
       requestBody:
@@ -106,12 +106,12 @@
         <td><pre>
             tags:
         - "Supermarket Service"
-      summary: "Search supermarket by its id"
+      summary: "Search supermarket by id"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
       responses:
         "200":
-          description: "Successfully found supermarket by id"
+          description: "Successfully found supermarket"
           content:
             application/json:
               schema:
@@ -125,7 +125,7 @@
         <td><pre>
             tags:
         - "Supermarket Service"
-      summary: "Update supermarket by its id"
+      summary: "Update supermarket by id"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
       requestBody:
@@ -137,7 +137,7 @@
         <td><pre>
             responses:
         "200":
-          description: "Successfully updated supermarket by id"
+          description: "Successfully updated supermarket"
           content:
             application/json:
               schema:
@@ -152,12 +152,12 @@
         <td><pre>
             tags:
         - "Supermarket Service"
-      summary: "Delete supermarket by its id"
+      summary: "Delete supermarket by id"
       parameters:
         - $ref: "#/components/parameters/supermarket_id"
       responses:
         "200":
-          description: "Successfully deleted supermarket by id"
+          description: "Successfully removed supermarket"
           content:
             application/json:
               schema:
@@ -196,7 +196,7 @@
         <td><pre>
             responses:
         "201":
-          description: "Successfully created supermarket"
+          description: "Successfully created new supermarket"
           content:
             application/json:
               schema:
@@ -220,7 +220,7 @@
         <td><pre>
             responses:
         "201":
-          description: "Successfully created product"
+          description: "Successfully created new product"
           content:
             application/json:
               schema:
@@ -252,12 +252,12 @@
         <td><pre>
             tags:
         - "Product Service"
-      summary: "Search product by its id"
+      summary: "Search product by id"
       parameters:
         - $ref: "#/components/parameters/product_id"
       responses:
         "200":
-          description: "Successfully found product by id"
+          description: "Successfully found product"
           content:
             application/json:
               schema:
@@ -272,12 +272,12 @@
         <td><pre>
             tags:
         - "Product Service"
-      summary: "Delete product by its id"
+      summary: "Delete product by id"
       parameters:
         - $ref: "#/components/parameters/product_id"
       responses:
         "200":
-          description: "Successfully deleted product by id"
+          description: "Successfully remove product"
           content:
             application/json:
               schema:
@@ -291,7 +291,7 @@
         <td><pre>
             tags:
         - "Product Service"
-      summary: "Update product by its id"
+      summary: "Update product by id"
       parameters:
         - $ref: "#/components/parameters/product_id"
       requestBody:
@@ -303,7 +303,7 @@
         <td><pre>
             responses:
         "200":
-          description: "Successfully updated product by id"
+          description: "Successfully updated product"
           content:
             application/json:
               schema:
@@ -329,7 +329,7 @@
         <td><pre>
             responses:
         "201":
-          description: "Successfully created category"
+          description: "Successfully created new category"
           content:
             application/json:
               schema:
@@ -360,12 +360,12 @@
         <td><pre>
             tags:
         - "Category Service"
-      summary: "Search category by its id"
+      summary: "Search category by id"
       parameters:
         - $ref: "#/components/parameters/category_id"
       responses:
         "200":
-          description: "Successfully found category by id"
+          description: "Successfully found category"
           content:
             application/json:
               schema:
@@ -380,12 +380,12 @@
         <td><pre>
             tags:
         - "Category Service"
-      summary: "Delete category by its id"
+      summary: "Delete category by id"
       parameters:
         - $ref: "#/components/parameters/category_id"
       responses:
         "200":
-          description: "Successfully deleted category by id"
+          description: "Successfully removed category"
           content:
             application/json:
               schema:
@@ -453,21 +453,21 @@
      <!------ Saved Products Service -------->
     <tr>
         <td rowspan="3">Saved Products Service</td>
-        <td>GET /profiles/{profile_id}/saved-products</td>
+        <td>GET /profiles/{profile_id}/favourite-products</td>
         <td></td>
         <td><pre>
             tags:
         - "Saved Products Service"
-      summary: "Search saved products by profile id"
+      summary: "Search favourite products by profile id"
       parameters:
         - $ref: "#/components/parameters/profile_id"
       responses:
         "200":
-          description: "Successfully found saved products by profile id"
+          description: "Successfully found favourite products by profile id"
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Saved_products'
+                $ref: '#/components/schemas/Favourite_products'
         "404":
           description: "Profile's id not found"
         </pre></td>
@@ -484,35 +484,35 @@
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Saved_products'
+              $ref: '#/components/schemas/Favourite_products'
         </pre></td>
         <td><pre>
             responses:
         "200":
-          description: "Successfully created category"
+          description: "Successfully created new category"
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Saved_products'
+                $ref: '#/components/schemas/Favourite_products'
         </pre></td>
     </tr>
     <tr>
-        <td>DELETE /profiles/{profile_id}/saved-products/{product_id}</td>
+        <td>DELETE /profiles/{profile_id}/favourite-products/{product_id}</td>
         <td></td>
         <td><pre>
             tags:
-        - "Saved Products Service"
-      summary: "Remove saved product from profile"
+        - "Favourite Products Service"
+      summary: "Remove favourite product from profile"
       parameters:
         - $ref: "#/components/parameters/profile_id"
         - $ref: "#/components/parameters/product_id"
       responses:
         "200":
-          description: "Successfully deleted saved product from profile"
+          description: "Successfully remove favourite product from profile"
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Saved_products'
+                $ref: '#/components/schemas/Favourites_products'
         "404":
           description: "Profile's or Product's id not found"
         </pre></td>
@@ -601,7 +601,7 @@
         - $ref: "#/components/parameters/category_id"
       responses:
         "200":
-          description: "Successfully deleted product from supermarket"
+          description: "Successfully removed product from supermarket"
           content:
             application/json:
               schema:
@@ -713,7 +713,7 @@
         - $ref: "#/components/parameters/qrcode_id"
       responses:
         "200":
-          description: "Successfully deleted qrcode"
+          description: "Successfully removed qrcode"
           content:
             application/json:
               schema:
