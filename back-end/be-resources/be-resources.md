@@ -152,17 +152,17 @@
 <tr>
     <td rowspan="3">Serviço de Avaliação</td>
     <td>GET</td>
-    <td>/products/{product_id}/ratings</td>
+    <td>/products/{product_id}/feedback</td>
     <td>Obter a lista de avaliações de um produto específico</td>
 </tr>
 <tr>
     <td>PUT</td>
-    <td>/products/{product_id}/ratings</td>
+    <td>/products/{product_id}/feedback</td>
     <td>Adicionar ou atualizar uma avaliação de um produto</td>
 </tr>
 <tr>
     <td>GET</td>
-    <td>/products/{product_id}/ratings/{rating_id}</td>
+    <td>/products/{product_id}/feedback/{feedback_id}</td>
     <td>Obter detalhes de uma avaliação específica de um produto</td>
 </tr>
 <tr>
