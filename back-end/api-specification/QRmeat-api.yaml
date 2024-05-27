@@ -103,20 +103,20 @@ components:
         category_name:
           type: "string"
 	  description: "Name of the category"
-    Saved_products:
+    Favourite_products:
       type: "object"
       properties:
         profile_id:
           type: "integer"
-          description: "Profile unique identifier that saved the product"
+          description: "Profile unique identifier that favourite the product"
  	product_id:
           type: "integer"
           description: "Product's unique identifier"
-        saved_products:
+        favourite_products:
           type: "array"
           items:
             type: "integer"
-            description: "Saved Product's unique identifiers"
+            description: "Favourite Product's unique identifiers"
     Supermarket_categories:
       type: "object"
       properties:
