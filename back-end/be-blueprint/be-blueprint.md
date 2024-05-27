@@ -6,3 +6,4 @@
 # Serviço de Leitura de QR
 <img src="./BE_BlueprintQrcode.png" alt="BE_BlueprintQrcode" width="600" height="600"></td>
 # Serviço de Perfil
+<img src="./BE_BlueprintProfile.png" alt="BE_BlueprintProfile" width="600" height="600"></td>
