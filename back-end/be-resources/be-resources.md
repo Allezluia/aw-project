@@ -118,7 +118,7 @@
     <td>Obter as estatísticas disponíveis</td>
 </tr>
 <tr>
-    <td rowspan="3">Serviço de Produtos Guardados</td>
+    <td rowspan="3">Serviço de Produtos Guardado nos favoritos</td>
     <td>GET</td>
     <td>/profiles/{profile_id}/favourite-products</td>
     <td>Obter a lista de produtos guardados de um perfil</td>
