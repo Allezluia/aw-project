@@ -9,8 +9,8 @@
 <img src="./BE_BlueprintProfile.png" alt="BE_BlueprintProfile" width="600" height="600"></td>
 # Serviço de Serviço de Produtos Guardados
 <img src="./BE_BlueprintFavourites.png" alt="BE_BlueprintFavourites" width="600" height="600"></td>
-# Serviço de Categoria de Supermercado
 # Serviço de Supermercado
+<img src="./BE_BlueprintSupermarket.png" alt="BlueprintSupermarket" width="600" height="600"></td>
 # Serviço de Produto
 # Serviço de Categoria
 # Serviço de Avaliação
