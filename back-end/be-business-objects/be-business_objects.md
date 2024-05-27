@@ -450,14 +450,14 @@
                 $ref: '#/components/schemas/Statistics'
         </pre></td>
     </tr>
-     <!------ Saved Products Service -------->
+     <!------ Favourite Products Service -------->
     <tr>
-        <td rowspan="3">Saved Products Service</td>
+        <td rowspan="3">Favourite Products Service</td>
         <td>GET /profiles/{profile_id}/favourite-products</td>
         <td></td>
         <td><pre>
             tags:
-        - "Saved Products Service"
+        - "Favourite Products Service"
       summary: "Search favourite products by profile id"
       parameters:
         - $ref: "#/components/parameters/profile_id"
@@ -473,11 +473,11 @@
         </pre></td>
     </tr>
     <tr>
-        <td>PUT /profiles/{profile_id}/saved-products</td>
+        <td>PUT /profiles/{profile_id}/favourite-products</td>
         <td><pre>
             tags:
-        - "Saved Products Service"
-      summary: "Add new saved product to profile"
+        - "Favourite Products Service"
+      summary: "Add new favourite product to profile"
       parameters:
         - $ref: "#/components/parameters/profile_id"
       requestBody:
