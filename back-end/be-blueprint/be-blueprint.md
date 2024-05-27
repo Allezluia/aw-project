@@ -8,6 +8,7 @@
 # Serviço de Perfil
 <img src="./BE_BlueprintProfile.png" alt="BE_BlueprintProfile" width="600" height="600"></td>
 # Serviço de Serviço de Produtos Guardados
+<img src="./BE_BlueprintFavourites.png" alt="BE_BlueprintFavourites" width="600" height="600"></td>
 # Serviço de Categoria de Supermercado
 # Serviço de Supermercado
 # Serviço de Produto
