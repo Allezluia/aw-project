@@ -120,21 +120,21 @@
 <tr>
     <td rowspan="3">Serviço de Produtos Guardados</td>
     <td>GET</td>
-    <td>/profiles/{profile_id}/saved-products</td>
+    <td>/profiles/{profile_id}/favourite-products</td>
     <td>Obter a lista de produtos guardados de um perfil</td>
 </tr>
 <tr>
     <td>PUT</td>
-    <td>/profiles/{profile_id}/saved-products</td>
+    <td>/profiles/{profile_id}/favourite-products</td>
     <td>Guardar um novo produto no perfil</td>
 </tr>
 <tr>
     <td>DELETE</td>
-    <td>/profiles/{profile_id}/saved-products/{product_id}</td>
+    <td>/profiles/{profile_id}/favourite-products/{product_id}</td>
     <td>Eliminar um produto guardado de um perfil</td>
 </tr>
 <tr>
-    <td rowspan="3">Serviço de Catálogo de Supermercado</td>
+    <td rowspan="3">Serviço de Categoria de Supermercado</td>
     <td>GET</td>
     <td>/supermarkets/{supermarket_id}/categories/{category_id}/products</td>
     <td>Obter a lista de produtos de uma categoria específica de um supermercado</td>
@@ -152,17 +152,17 @@
 <tr>
     <td rowspan="3">Serviço de Avaliação</td>
     <td>GET</td>
-    <td>/products/{product_id}/ratings</td>
+    <td>/products/{product_id}/feedback</td>
     <td>Obter a lista de avaliações de um produto específico</td>
 </tr>
 <tr>
     <td>PUT</td>
-    <td>/products/{product_id}/ratings</td>
+    <td>/products/{product_id}/feedback</td>
     <td>Adicionar ou atualizar uma avaliação de um produto</td>
 </tr>
 <tr>
     <td>GET</td>
-    <td>/products/{product_id}/ratings/{rating_id}</td>
+    <td>/products/{product_id}/feedback/{feedback_id}</td>
     <td>Obter detalhes de uma avaliação específica de um produto</td>
 </tr>
 <tr>
