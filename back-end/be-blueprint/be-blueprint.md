@@ -12,6 +12,7 @@
 # Serviço de Supermercado
 <img src="./BE_BlueprintSupermarket.png" alt="BlueprintSupermarket" width="600" height="600"></td>
 # Serviço de Produto
-# Serviço de Categoria
+# Serviço de Categorias do Supermercado
+<img src="./BE_BlueprintSupermarketCategories.png" alt="BE_BlueprintSupermarketCategories" width="600" height="600"></td>
 # Serviço de Avaliação
 <img src="./BE_BlueprintFeedback.png" alt="BE_BlueprintFeedback" width="600" height="600"></td>
