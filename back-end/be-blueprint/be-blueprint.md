@@ -14,3 +14,4 @@
 # Serviço de Produto
 # Serviço de Categoria
 # Serviço de Avaliação
+<img src="./BE_BlueprintFeedback.png" alt="BE_BlueprintFeedback" width="600" height="600"></td>
